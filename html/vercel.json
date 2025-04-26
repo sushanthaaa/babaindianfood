@@ -6,11 +6,5 @@
           { "key": "X-Robots-Tag", "value": "noindex" }
         ]
       }
-    ],
-    "routes": [
-        {
-          "src" : "/(.*)",          
-          "dest": "/api/basic-auth"
-        }
-      ] 
-}
+    ]
+  }
