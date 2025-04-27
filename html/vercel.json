@@ -7,10 +7,18 @@
         ]
       }
     ],
-    "routes": [
-        {
-          "src" : "/(.*)",          
-          "dest": "/api/basic-auth" 
-        }
-      ]
+  
+    "rewrites": [
+      { "source": "/api/basic-auth", "destination": "/api/basic-auth" },
+  
+      {
+        "source": "/(.*)",
+        "has": [
+          { "type": "header", "key": "x-internal", "value": "1" }
+        ],
+        "destination": "/$1"
+      },
+  
+      { "source": "/(.*)", "destination": "/api/basic-auth" }
+    ]
   }
