@@ -30,9 +30,7 @@ export default async function handler(request) {
     return new Response(proxied.body, { status: proxied.status, headers });
   }
 
-  /* ────────────────────────────────────────────────────────── */
   /* 3.  Otherwise ask for user/password                       */
-  /* ────────────────────────────────────────────────────────── */
   return new Response('Unauthorized', {
     status: 401,
     headers: { 'WWW-Authenticate': 'Basic realm="Preview"' }
