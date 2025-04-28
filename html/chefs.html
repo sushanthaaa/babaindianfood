@@ -427,105 +427,112 @@
     </div>
     <!-- Page Team End -->
 
-    <!-- Reserve Table Section Start -->
-    <div class="reserve-table">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Reserve table Content Start -->
-                    <div class="reserve-table-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">reserve a table</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">reserve now your table and <span>enjoy dining experience.</span></h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Reserve Table Body Start -->
-                        <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.2s">
-                            <h3>open hours</h3>
-                            <ul>
-                                <li>Mon - Thu <span>10:00 AM - 09:00 PM</span></li>
-                                <li>Fri - Sat <span>09:00 AM - 10:00 PM</span></li>
-                                <li>Sun <span>Closed</span></li>
-                            </ul>
-                        </div>
-                        <!-- Reserve Table Body End -->
-                    </div>
-                    <!-- Reserve table Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Reserve Table Form Start -->
-                    <div class="reserve-table-form">
-                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
-                            <div class="row">
-                                <div class="form-group col-md-12 mb-4">
-                                    <label class="form-label">your name</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="e.g. John" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">email address</label>
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="e.g. John@example.com" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                
-                                <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">phone number</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="e.g. + 123 456 8792" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">date</label>
-                                    <input type="date" name="date" class="form-control" id="date" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">time</label>
-                                    <select name="time" class="form-control form-select" id="time" required>
-                                        <option value="" disabled selected>Select time</option>
-                                        <option value="6_30pm">06:30 PM</option>
-                                        <option value="7_00pm">07:00 PM</option>
-                                        <option value="7_30pm">07:30 PM</option>
-                                        <option value="8_00pm">08:00 PM</option>
-                                        <option value="8_30pm">08:30 PM</option>
-                                        <option value="9_00pm">09:00 PM</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">Number Of Person</label>
-                                    <select name="person" class="form-control form-select" id="person" required>
-                                        <option value="" disabled selected>number of person</option>
-                                        <option value="1_person">1 Person</option>
-                                        <option value="5_person">5 Person</option>
-                                        <option value="10_person">10 Person</option>
-                                        <option value="15_person">15 Person</option>
-                                        <option value="20_person">20 Person</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="reserve-table-btn">
-                                        <button type="submit" class="btn-default">reserve now</button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Reserve Table Form End -->
-                </div>
+   <!-- =========  Reserve / Location Section  ========= -->
+<section class="reserve-table py-120">
+    <div class="container">
+      <div class="row g-lg-5 align-items-start">
+  
+        <!-- ▸ Left column – CTA + hours -->
+        <div class="col-lg-4">
+          <div class="reserve-table-content">
+            <!-- heading -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp">reserve&nbsp;via&nbsp;line</h3>
+              <h2 class="text-anime-style-2" data-cursor="-opaque">
+                Tap to&nbsp;book <span>instantly</span>
+              </h2>
             </div>
-        </div>
+  
+            <!-- opening hours -->
+            <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.1s">
+              <h3>Opening&nbsp;Hours</h3>
+              <ul>
+                <li>Mon – Thu <span>10 : 00 AM – 09 : 00 PM</span></li>
+                <li>Fri – Sat <span>09 : 00 AM – 10 : 00 PM</span></li>
+                <li>Sun <span>Closed</span></li>
+              </ul>
+            </div>
+  
+            <!-- LINE button -->
+            <div class="about-content-btn wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://lin.ee/abcd1234" target="_blank"
+                 class="btn-default">
+                Reserve on LINE&nbsp;<i class="fa-brands fa-line ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- /col -->
+  
+        <!-- ▸ Right column – tabs + maps -->
+        <div class="col-lg-8">
+          <div class="our-menu-tab">
+  
+            <!-- tabs -->
+            <div class="our-menu-tab-nav">
+              <ul class="nav nav-tabs" id="branchTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active"
+                          id="branch1-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#branch1"
+                          type="button" role="tab"
+                          aria-selected="true">
+                    Branch&nbsp;①&nbsp;&mdash;&nbsp;Central&nbsp;District
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link"
+                          id="branch2-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#branch2"
+                          type="button" role="tab"
+                          aria-selected="false">
+                    Branch&nbsp;②&nbsp;&mdash;&nbsp;Wuri&nbsp;District
+                  </button>
+                </li>
+              </ul>
+            </div><!-- /tab nav -->
+  
+            <!-- tab panes -->
+            <div class="tab-content pt-4" id="branchTabContent">
+  
+              <!-- Central branch -->
+              <div class="tab-pane fade show active" id="branch1"
+                   role="tabpanel" aria-labelledby="branch1-tab">
+                <h4>BABA Indian Restaurant &bull; Central District</h4>
+                <p class="mb-2">
+                  189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung 市 <br>
+                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2221-7258
+                </p>
+  
+                <!-- responsive map -->
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745828474900!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div><!-- /pane -->
+  
+              <!-- North branch -->
+              <div class="tab-pane fade" id="branch2"
+                   role="tabpanel" aria-labelledby="branch2-tab">
+                <h4>BABA Indian Restaurant &bull; Wuri District</h4>
+                <p class="mb-2">
+                  212&nbsp;Zhongshan&nbsp;Rd., Wuri&nbsp;Dist., Taichung 市 <br>
+                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;987-6543
+                </p>
+  
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.781401949455!2d120.64199809999998!3d24.1091817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1skn!2stw!4v1745829141694!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div><!-- /pane -->
+  
+            </div><!-- /tab-content -->
+          </div><!-- /our-menu-tab -->
+        </div><!-- /col -->
+  
+      </div><!-- /row -->
     </div>
-    <!-- Reserve Table Section End -->
+  </section>
+  <!-- ========= /Reserve / Location Section ========= -->
     
     <!-- Main Footer Section Start -->
     <footer class="main-footer">
