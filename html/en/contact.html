@@ -228,80 +228,112 @@
     </div>
     <!-- Google Map End -->
 
- <!-- Reserve / Locations Section Start -->
-<div class="reserve-table">
+<!-- =========  Reserve / Location Section  ========= -->
+<section class="reserve-table py-120">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- text + LINE button -->
-        <div class="col-lg-5 mb-5 mb-lg-0">
+      <div class="row g-lg-5 align-items-start">
+  
+        <!-- ▸ Left column – CTA + hours -->
+        <div class="col-lg-4">
           <div class="reserve-table-content">
-            <!-- title -->
+            <!-- heading -->
             <div class="section-title">
-              <h3 class="wow fadeInUp">reserve via&nbsp;LINE</h3>
+              <h3 class="wow fadeInUp">reserve&nbsp;via&nbsp;line</h3>
               <h2 class="text-anime-style-2" data-cursor="-opaque">
-                Tap to book &nbsp;<span>instantly</span>
+                Tap to&nbsp;book <span>instantly</span>
               </h2>
             </div>
   
             <!-- opening hours -->
-            <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.15s">
-              <h3>opening&nbsp;hours</h3>
+            <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.1s">
+              <h3>Opening&nbsp;Hours</h3>
               <ul>
-                <li>Mon – Thu <span>10 : 00 AM – 9 : 00 PM</span></li>
+                <li>Mon – Thu <span>10 : 00 AM – 09 : 00 PM</span></li>
                 <li>Fri – Sat <span>09 : 00 AM – 10 : 00 PM</span></li>
                 <li>Sun <span>Closed</span></li>
               </ul>
             </div>
   
             <!-- LINE button -->
-            <div class="about-content-btn wow fadeInUp" data-wow-delay="0.25s">
-              <a href="https://line.me/R/ti/p/@sushanthaaa"
-                 target="_blank"
-                 rel="noopener"
-                 class="btn-default btn-highlighted">
-                <i class="fa-brands fa-line"></i>&nbsp;Reserve on LINE
+            <div class="about-content-btn wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://lin.ee/abcd1234" target="_blank"
+                 class="btn-default">
+                Reserve on LINE&nbsp;<i class="fa-brands fa-line ms-1"></i>
               </a>
             </div>
           </div>
         </div><!-- /col -->
   
-        <!-- MAPS column -->
-        <div class="col-lg-7">
-          <div class="row g-4">
-            <!-- Branch 1 -->
-            <div class="col-12">
-              <div class="map-box wow fadeInUp">
-                <h4 class="mb-2">Branch ① — West District</h4>
-                <p class="small mb-3">
-                  123 Ziyou Rd., West Dist., Taichung&nbsp;市<br>
-                  ☎&nbsp;(04) 123-4567
-                </p>
-                <!-- Google Maps IFRAME -->
-                <div class="map-embed ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745826408608!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-            </div>
+        <!-- ▸ Right column – tabs + maps -->
+        <div class="col-lg-8">
+          <div class="our-menu-tab">
   
-            <!-- Branch 2 -->
-            <div class="col-12">
-              <div class="map-box wow fadeInUp" data-wow-delay="0.1s">
-                <h4 class="mb-2">Branch ② — North District</h4>
-                <p class="small mb-3">
-                  456 Jiansing Rd., North Dist., Taichung&nbsp;市<br>
-                  ☎&nbsp;(04) 987-6543
+            <!-- tabs -->
+            <div class="our-menu-tab-nav">
+              <ul class="nav nav-tabs" id="branchTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active"
+                          id="branch1-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#branch1"
+                          type="button" role="tab"
+                          aria-selected="true">
+                    Branch&nbsp;①&nbsp;&mdash;&nbsp;Central&nbsp;District
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link"
+                          id="branch2-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#branch2"
+                          type="button" role="tab"
+                          aria-selected="false">
+                    Branch&nbsp;②&nbsp;&mdash;&nbsp;North&nbsp;District
+                  </button>
+                </li>
+              </ul>
+            </div><!-- /tab nav -->
+  
+            <!-- tab panes -->
+            <div class="tab-content pt-4" id="branchTabContent">
+  
+              <!-- Central branch -->
+              <div class="tab-pane fade show active" id="branch1"
+                   role="tabpanel" aria-labelledby="branch1-tab">
+                <h4>BABA Indian Restaurant &bull; Central District</h4>
+                <p class="mb-2">
+                  189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung 市 <br>
+                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2221-7258
                 </p>
-                <div class="map-embed ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745826408608!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+                <!-- responsive map -->
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745828474900!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-              </div>
-            </div>
-          </div><!-- /row -->
+              </div><!-- /pane -->
+  
+              <!-- North branch -->
+              <div class="tab-pane fade" id="branch2"
+                   role="tabpanel" aria-labelledby="branch2-tab">
+                <h4>BABA Indian Restaurant &bull; North District</h4>
+                <p class="mb-2">
+                  456&nbsp;Jiansing&nbsp;Rd., North&nbsp;Dist., Taichung 市 <br>
+                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;987-6543
+                </p>
+  
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745828474900!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div><!-- /pane -->
+  
+            </div><!-- /tab-content -->
+          </div><!-- /our-menu-tab -->
         </div><!-- /col -->
+  
       </div><!-- /row -->
-    </div><!-- /container -->
-  </div>
-  <!-- Reserve / Locations Section End -->
+    </div>
+  </section>
+  <!-- ========= /Reserve / Location Section ========= -->
     
     <!-- Main Footer Section Start -->
     <footer class="main-footer">
