@@ -228,105 +228,80 @@
     </div>
     <!-- Google Map End -->
 
-    <!-- Reserve Table Section Start -->
-    <div class="reserve-table">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Reserve table Content Start -->
-                    <div class="reserve-table-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">reserve a table</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">reserve now your table and <span>enjoy dining experience.</span></h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Reserve Table Body Start -->
-                        <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.2s">
-                            <h3>open hours</h3>
-                            <ul>
-                                <li>Mon - Thu <span>10:00 AM - 09:00 PM</span></li>
-                                <li>Fri - Sat <span>09:00 AM - 10:00 PM</span></li>
-                                <li>Sun <span>Closed</span></li>
-                            </ul>
-                        </div>
-                        <!-- Reserve Table Body End -->
-                    </div>
-                    <!-- Reserve table Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Reserve Table Form Start -->
-                    <div class="reserve-table-form">
-                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
-                            <div class="row">
-                                <div class="form-group col-md-12 mb-4">
-                                    <label class="form-label">your name</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="e.g. John" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">email address</label>
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="e.g. John@example.com" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                
-                                <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">phone number</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="e.g. + 123 456 8792" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">date</label>
-                                    <input type="date" name="date" class="form-control" id="date" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">time</label>
-                                    <select name="time" class="form-control form-select" id="time" required>
-                                        <option value="" disabled selected>Select time</option>
-                                        <option value="6_30pm">06:30 PM</option>
-                                        <option value="7_00pm">07:00 PM</option>
-                                        <option value="7_30pm">07:30 PM</option>
-                                        <option value="8_00pm">08:00 PM</option>
-                                        <option value="8_30pm">08:30 PM</option>
-                                        <option value="9_00pm">09:00 PM</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">Number Of Person</label>
-                                    <select name="person" class="form-control form-select" id="person" required>
-                                        <option value="" disabled selected>number of person</option>
-                                        <option value="1_person">1 Person</option>
-                                        <option value="5_person">5 Person</option>
-                                        <option value="10_person">10 Person</option>
-                                        <option value="15_person">15 Person</option>
-                                        <option value="20_person">20 Person</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="reserve-table-btn">
-                                        <button type="submit" class="btn-default">reserve now</button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Reserve Table Form End -->
-                </div>
+ <!-- Reserve / Locations Section Start -->
+<div class="reserve-table">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- text + LINE button -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="reserve-table-content">
+            <!-- title -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp">reserve via&nbsp;LINE</h3>
+              <h2 class="text-anime-style-2" data-cursor="-opaque">
+                Tap to book &nbsp;<span>instantly</span>
+              </h2>
             </div>
-        </div>
-    </div>
-    <!-- Reserve Table Section End -->
+  
+            <!-- opening hours -->
+            <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.15s">
+              <h3>opening&nbsp;hours</h3>
+              <ul>
+                <li>Mon – Thu <span>10 : 00 AM – 9 : 00 PM</span></li>
+                <li>Fri – Sat <span>09 : 00 AM – 10 : 00 PM</span></li>
+                <li>Sun <span>Closed</span></li>
+              </ul>
+            </div>
+  
+            <!-- LINE button -->
+            <div class="about-content-btn wow fadeInUp" data-wow-delay="0.25s">
+              <a href="https://line.me/R/ti/p/@sushanthaaa"
+                 target="_blank"
+                 rel="noopener"
+                 class="btn-default btn-highlighted">
+                <i class="fa-brands fa-line"></i>&nbsp;Reserve on LINE
+              </a>
+            </div>
+          </div>
+        </div><!-- /col -->
+  
+        <!-- MAPS column -->
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <!-- Branch 1 -->
+            <div class="col-12">
+              <div class="map-box wow fadeInUp">
+                <h4 class="mb-2">Branch ① — West District</h4>
+                <p class="small mb-3">
+                  123 Ziyou Rd., West Dist., Taichung&nbsp;市<br>
+                  ☎&nbsp;(04) 123-4567
+                </p>
+                <!-- Google Maps IFRAME -->
+                <div class="map-embed ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745826408608!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Branch 2 -->
+            <div class="col-12">
+              <div class="map-box wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="mb-2">Branch ② — North District</h4>
+                <p class="small mb-3">
+                  456 Jiansing Rd., North Dist., Taichung&nbsp;市<br>
+                  ☎&nbsp;(04) 987-6543
+                </p>
+                <div class="map-embed ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.67433427553017!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2sBABA%20Indian%20Restaurant!5e0!3m2!1skn!2stw!4v1745826408608!5m2!1skn!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div><!-- /row -->
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div>
+  <!-- Reserve / Locations Section End -->
     
     <!-- Main Footer Section Start -->
     <footer class="main-footer">
