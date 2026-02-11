@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://babaindianfood.tw/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/about.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/about.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/about.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/about.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/menu.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/menu.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/menu.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/menu.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/services.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/services.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/services.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/contact.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/contact.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/gallery.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/gallery.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/gallery.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/gallery.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/blog.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/blog.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/blog-beginner-guide.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-beginner-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-beginner-guide.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/blog-beginner-guide.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-beginner-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-beginner-guide.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/blog-vegetarian.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-vegetarian.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-vegetarian.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/blog-vegetarian.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-vegetarian.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-vegetarian.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/blog-tandoor-curries.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-tandoor-curries.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-tandoor-curries.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/blog-tandoor-curries.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-tandoor-curries.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-tandoor-curries.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/blog-vegetarian-paradise.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-vegetarian-paradise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-vegetarian-paradise.html"/>
+  </url>
+  <url>
+    <loc>https://babaindianfood.tw/en/blog-vegetarian-paradise.html</loc>
+    <lastmod>2026-02-08</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog-vegetarian-paradise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://babaindianfood.tw/en/blog-vegetarian-paradise.html"/>
+  </url>
+</urlset>

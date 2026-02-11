@@ -6,8 +6,14 @@
 
 	/* Preloader Effect */
 	$window.on('load', function(){
-		$(".preloader").fadeOut(600);
+		$(".preloader").fadeOut(300);
 	});
+	// Fallback to hide preloader quickly if window load takes too long
+	setTimeout(function() {
+		if ($(".preloader").is(":visible")) {
+			$(".preloader").fadeOut(300);
+		}
+	}, 1000);
 
 	/* Sticky Header */	
 	if($('.active-sticky-header').length){

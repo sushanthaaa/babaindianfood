@@ -1,405 +1,492 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-<head>
-  <!-- 必要 meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!-- Required meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+      
+    <!-- SEO essentials -->
+    <title>線上訂位 | 巴巴印度料理館 台中</title>
+    <meta name="description"
+          content="立即預訂 巴巴印度料理館 台中分店。在兩個便利的地點享受正宗印度美食。透過 FunNow 進行線上訂位。">
+    <meta name="keywords"
+          content="台中印度餐廳, 線上訂位, 預約, 台中美食, 巴巴印度料理館">
+    <meta name="author" content="巴巴印度料理館">
+      
+        <!-- Canonical & language links -->
+        <link rel="canonical" href="https://babaindianfood.tw/contact.html">
+        <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/contact.html">
+        <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/contact.html">
+      
+        <!-- Open Graph -->
+        <meta property="og:type"        content="website">
+        <meta property="og:title"       content="線上訂位 - 巴巴印度料理館">
+        <meta property="og:description" content="加入我們，在台中體驗正宗的印度餐飲。立即線上預訂。">
+        <meta property="og:url"         content="https://babaindianfood.tw/contact.html">
+        <meta property="og:image"       content="https://babaindianfood.tw/images/hero-tandoori.jpg">
+      
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      
+        <!-- Fonts & CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+        <link href="css/bootstrap.min.css"      rel="stylesheet">
+        <link href="css/slicknav.min.css"       rel="stylesheet">
+        <link href="css/swiper-bundle.min.css"  rel="stylesheet">
+        <link href="css/all.min.css"            rel="stylesheet">
+        <link href="css/animate.css"            rel="stylesheet">
+        <link href="css/magnific-popup.css"     rel="stylesheet">
+        <link href="css/mousecursor.css"        rel="stylesheet">
+        <link href="css/custom.css"             rel="stylesheet">
 
-  <!-- SEO 主要設定 -->
-  <title>台中 Baba 印度料理 – 正宗印度咖哩與坦都烤餅</title>
-  <meta name="description"
-        content="台中兩家分店，供應北印咖哩、南印烤餅與素食選擇，線上訂位立即享受道地印度風味。">
-  <meta name="keywords"
-        content="台中印度餐廳, 印度料理 Taiwan, 咖哩, 坦都烤餅, Baba 印度料理">
-  <meta name="author" content="Baba 印度料理">
+        <style>
+            .branch-card {
+                border: none;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+                background: #fff;
+            }
+            .branch-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            }
+            .branch-img {
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+            .branch-img::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 50%;
+                background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+            }
+            .branch-badge {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background: #ff5e14;
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 30px;
+                font-weight: 600;
+                font-size: 14px;
+                z-index: 2;
+            }
+            .branch-content {
+                padding: 30px;
+            }
+            .branch-title {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #1a1a1a;
+            }
+            .branch-info {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 25px;
+            }
+            .branch-info li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 12px;
+                color: #666;
+            }
+            .branch-info i {
+                color: #ff5e14;
+                margin-right: 15px;
+                margin-top: 5px;
+                width: 20px;
+                text-align: center;
+            }
+            .btn-reserve {
+                background: #1a1a1a;
+                color: #fff;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-weight: 600;
+                width: 100%;
+                transition: background 0.3s ease;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+            }
+            .btn-reserve:hover {
+                background: #ff5e14;
+                color: #fff;
+            }
+            .btn-thefork {
+                background: hsl(174, 100%, 20%);
+                color: #fff;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-weight: 600;
+                width: 100%;
+                transition: opacity 0.3s ease;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+            }
+            .btn-thefork:hover {
+                opacity: 0.9;
+                color: #fff;
+            }
+            .btn-tripadvisor {
+                background: #00af87;
+                color: #fff;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-weight: 600;
+                width: 100%;
+                transition: opacity 0.3s ease;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+            }
+            .btn-tripadvisor:hover {
+                opacity: 0.9;
+                color: #fff;
+            }
+            .opening-hours-section {
+                background: #fcf8f5;
+                border-radius: 30px;
+                padding: 40px;
+                margin-top: 60px;
+            }
+            .hours-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 30px;
+            }
+            .hour-item h4 {
+                color: #ff5e14;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .map-container {
+                height: 300px;
+                border-radius: 15px;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+        </style>
 
-  <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://babaindianfood.tw/">
-  <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/">
-  <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/">
+        <!-- Vercel Web Analytics -->
+        <script>
+          window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </script>
+        <script defer src="/_vercel/insights/script.js"></script>
+    </head>
+<body class="secondary-page">
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="restaurant">
-  <meta property="og:title"       content="台中 Baba 印度料理">
-  <meta property="og:description" content="正宗印度咖哩與坦都烤餅 • 線上訂位">
-  <meta property="og:url"         content="https://babaindianfood.tw/">
-  <meta property="og:image"       content="https://babaindianfood.tw/images/hero-img.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="台中 Baba 印度料理">
-  <meta name="twitter:description" content="台中最道地的印度料理，立即訂位。">
-  <meta name="twitter:image"       content="https://babaindianfood.tw/images/hero-img.jpg">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
-  <!-- 字體與樣式 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <link href="css/bootstrap.min.css"      rel="stylesheet">
-  <link href="css/slicknav.min.css"       rel="stylesheet">
-  <link href="css/swiper-bundle.min.css"  rel="stylesheet">
-  <link href="css/all.min.css"            rel="stylesheet">
-  <link href="css/animate.css"            rel="stylesheet">
-  <link href="css/magnific-popup.css"     rel="stylesheet">
-  <link href="css/mousecursor.css"        rel="stylesheet">
-  <link href="css/custom.css"             rel="stylesheet">
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-</head>
-
-<body>
-
+    <!-- Preloader Start -->
   <!-- Preloader -->
   <div class="preloader">
-    <div class="loading-container">
-      <div class="loading"></div>
-      <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
     </div>
   </div>
+	</div>
+	<!-- Preloader End -->
 
-  <!-- ============== HEADER ============== -->
-  <header class="main-header">
+<!-- ================= HEADER ================= -->
+<header class="main-header">
     <div class="header-sticky">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-
-          <!-- Logo -->
-          <a class="navbar-brand" href="/">
-            <img src="images/logo.svg" alt="Baba 印度料理 Logo">
-          </a>
-
-          <!-- Main Menu -->
-          <div class="collapse navbar-collapse main-menu">
-            <div class="nav-menu-wrapper">
-              <ul class="navbar-nav mr-auto" id="menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">服務項目</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.html">菜單</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
-
-                <!-- Language Switcher -->
-                <li class="nav-item submenu">
-                  <a class="nav-link" href="#">語言 Language</a>
-                  <ul class="lang-switch">
-                    <li class="nav-item"><a class="nav-link active" hreflang="zh-Hant-TW" href="../index.html">中文</a></li>
-                    <li class="nav-item"><a class="nav-link" hreflang="en" href="../en/index.html">EN</a></li>
-                  </ul>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                      <img src="images/baba-logo.png" alt="巴巴印度料理館 Logo" style="height: 60px; width: auto;">
+                  </a>
+                <div class="collapse navbar-collapse main-menu">
+                    <div class="nav-menu-wrapper">
+                        <ul class="navbar-nav mr-auto" id="menu">
+                            <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">品牌故事</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">服務項目</a></li>
+                              <li class="nav-item"><a class="nav-link" href="menu.html">精選菜單</a></li>
+                              <li class="nav-item"><a class="nav-link" href="gallery.html">美食相簿</a></li>
+                              <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+                              <li class="nav-item"><a class="nav-link" href="contact.html">立即訂位</a></li>
+                            <li class="nav-item submenu">
+                                <a class="nav-link" href="#">語言</a>
+                                <ul class="lang-switch">
+                                    <li class="nav-item"><a class="nav-link active" hreflang="zh-Hant-TW" href="contact.html">中文</a></li>
+                                    <li class="nav-item"><a class="nav-link" hreflang="en" href="en/contact.html">EN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-toggle"></div>
             </div>
-          </div>
-
-          <div class="navbar-toggle"></div>
-        </div>
-      </nav>
+        </nav>        
       <div class="responsive-menu"></div>
     </div>
-  </header>
-	<!-- Header End -->
+</header>
 
-    <!-- Page Header Start -->
-<div class="page-header parallaxie">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- Page Header Box Start -->
-				<div class="page-header-box">
-					<h1 class="text-anime-style-2" data-cursor="-opaque">線上訂位</h1>
-					<nav class="wow fadeInUp">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="./">首頁</a></li>
-							<li class="breadcrumb-item active" aria-current="page">線上訂位</li>
-						</ol>
-					</nav>
-				</div>
-				<!-- Page Header Box End -->
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Page Header End -->
+    <!-- Redesigned Hero -->
+    <section class="page-hero" style="background-image: url('images/hero-contact.jpg')">
+        <div class="container">
+            <h1 class="text-anime-style-2">立即訂位</h1>
+            <nav class="wow fadeInUp" data-wow-delay="0.3s">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item active">立即訂位</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
-<!-- Page Contact Us Start -->
-<div class="page-contact-us">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6">
-				<!-- Contect Us Content Start -->
-				<div class="contact-us-content">
-					<!-- Section Title Start -->
-					<div class="section-title">
-						<h3 class="wow fadeInUp">聯絡我們</h3>
-						<h2 class="text-anime-style-2" data-cursor="-opaque">歡迎與我們<span>聯絡</span></h2>
-						<p class="wow fadeInUp" data-wow-delay="0.2s">
-							我們的<strong>訂位服務</strong>採取<b>100% 線上預約</b>方式。<br>
-							• 您可點擊<a href="#reserve">訂位區域</a>或地圖分頁內的<em>立即訂位</em>按鈕，即刻透過 FunNow 完成線上預約。<br>
-							• 若為10人以上團體、外燴或特殊需求，請於營業時間來電或透過Facebook私訊我們，我們將快速回覆您的訊息。
-						</p>                        
-					</div>
-					<!-- Section Title End -->
-
-					<!-- Contact Info List Start -->
-					<div class="contact-info-list wow fadeInUp" data-wow-delay="0.4s">
-						<ul>
-							<li>台中市中區民族路189號, 400</li>
-							<li><a href="tel:+886 423 376 667">+886 423 376 667</a></li>
-						</ul>
-					</div>
-					<!-- Contact Info List End -->
-
-					<!-- Contact Social List Start -->
-					<div class="contact-social-list wow fadeInUp" data-wow-delay="0.6s">
-						<ul>
-							<li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-							<li><a href="https://www.facebook.com/people/%E5%B7%B4%E5%B7%B4%E9%81%94%E7%88%B8%E5%8D%B0%E5%BA%A6%E6%96%99%E7%90%86%E9%A4%A8-Baba-Indian-restaurant/100075753506880/"><i class="fa-brands fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-						</ul>
-					</div>
-					<!-- Contact Social List End -->
-				</div>
-				<!-- Contect Us Content End -->
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Page Contact Us End -->
-  
-<!-- =========  Reserve / Location Section  ========= -->
-<section class="reserve-table py-120" id="reserve">
-  <div class="container">
-    <div class="row g-lg-5 align-items-start">
-
-      <!-- ▸ ①  Left column – generic CTA & hours -->
-      <div class="col-lg-4">
-        <div class="reserve-table-content">
-
-          <!-- heading -->
-            <div class="section-title">
-              <h3 class="wow fadeInUp">線上預訂</h3>
-              <h2 class="text-anime-style-2" data-cursor="-opaque">
-                立即於 <span>FunNow</span> 預訂
-              </h2>
+    <!-- Main Content Section -->
+    <section class="reservation-page py-120">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">預訂您的美味體驗</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">選擇您偏好的 <span>分店地點</span></h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">在台中的兩個優美分店體驗正宗印度風味。為了您的便利，訂位服務採 100% 線上處理。</p>
+                    </div>
+                </div>
             </div>
 
-          <!-- opening hours -->
-          <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.1s">
-            <h3>營業時間</h3>
-            <ul>
-              <li>每日： <span>10:30 AM – 02:00 PM 及 04:30 PM – 09:30 PM</span></li>
-            </ul>
-          </div>
+            <div class="row g-4">
+                <!-- Branch 1: Central District -->
+                <div class="col-lg-6">
+                    <div class="branch-card wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="branch-img" style="background-image: url('images/hero-tandoori.jpg');">
+                            <span class="branch-badge">市區總店</span>
+                        </div>
+                        <div class="branch-content">
+                            <h3 class="branch-title">台中中區店 (總店)</h3>
+                            <ul class="branch-info">
+                                <li><i class="fas fa-map-marker-alt"></i> 台中市中區民族路 189 號</li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:+886422290775" class="text-reset text-decoration-none">04 2229 0775</a></li>
+                                <li><i class="fas fa-clock"></i> 每日：10:30 AM – 2:00 PM & 4:30 PM – 9:30 PM</li>
+                            </ul>
+                            <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank" class="btn-reserve mb-2">立即於 FUNNOW 預訂</a>
+                            <a href="https://www.tripadvisor.com/UserReviewEdit-g13792757-d34005408-BABA_Indian_Restaurant-Central_District_Taichung.html" target="_blank" class="btn-tripadvisor mb-2">於 TripAdvisor 留下評論</a>
+                            <a href="https://maps.app.goo.gl/uXv7XfX6yqXzX7Xf6" target="_blank" class="btn-default w-100 text-center py-2" style="background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a;">在 Google 地圖上查看</a>
+                            
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.6743342755302!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo!5e0!3m2!1szh-TW!2stw!4v1746370683648!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- friendly reminder -->
-          <p class="small mb-0 wow fadeInUp" data-wow-delay="0.15s">
-            請在右側選擇分店頁籤，然後點擊 <b>Reserve on FunNow</b> 進行訂位。
-          </p>
+                <!-- Branch 2: Wuri District -->
+                <div class="col-lg-6">
+                    <div class="branch-card wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="branch-img" style="background-image: url('images/hero-curry-rice.jpg');">
+                            <span class="branch-badge">烏日店</span>
+                        </div>
+                        <div class="branch-content">
+                            <h3 class="branch-title">台中烏日店</h3>
+                            <ul class="branch-info">
+                                <li><i class="fas fa-map-marker-alt"></i> 台中市烏日區中山路一段 212 號</li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:+886423376667" class="text-reset text-decoration-none">04 2337 6667</a></li>
+                                <li><i class="fas fa-clock"></i> 每日：10:30 AM – 2:00 PM & 4:30 PM – 9:30 PM</li>
+                            </ul>
+                            <a href="https://www.myfunnow.com/funbook/3383391234272/branch" target="_blank" class="btn-reserve mb-2">立即於 FUNNOW 預訂</a>
+                            <a href="https://widget.thefork.com/361ac96f-870e-4da1-8510-b39d23050bef" target="_blank" class="btn-thefork mb-3">透過 TheFork App 預訂</a>
+                            <a href="https://www.tripadvisor.com/UserReviewEdit-g13808452-d34005417-BABA_Indian_Restaurant-Wuri_Taichung.html" target="_blank" class="btn-tripadvisor mb-2">於 TripAdvisor 留下評論</a>
+                            <a href="https://maps.app.goo.gl/uXv7XfX6yqXzX7Xf6" target="_blank" class="btn-default w-100 text-center py-2" style="background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a;">在 Google 地圖上查看</a>
 
-        </div><!-- /reserve-table-content -->
-      </div><!-- /col -->
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.7812632852924!2d120.63942317552943!3d24.109186574907458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1szh-TW!2stw!4v1746370864951!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <!-- ▸ ②  Right column – tabs, maps, branch buttons -->
-      <div class="col-lg-8">
-        <div class="our-menu-tab">
+            <div class="opening-hours-section wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="mb-3">正在規劃活動？</h2>
+                        <p>對於大型團體（10 人以上）、特別慶祝活動或外燴諮詢，請直接透過電話或 Facebook Messenger 與我們聯繫。我們很樂意協助您的活動圓滿成功。</p>
+                        <div class="mt-4">
+                            <a href="https://www.facebook.com/people/%E5%B7%B4%E5%B7%B4%E9%81%94%E7%88%B8%E5%8D%B0%E5%BA%A6%E6%96%99%E7%90%86%E9%A4%A8-Baba-Indian-restaurant/100075753506880/" class="btn-default" target="_blank">在 Facebook 上傳訊</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hours-grid">
+                            <div class="hour-item">
+                                <h4>午餐時段</h4>
+                                <p>10:30 AM – 2:00 PM<br><small>每日營業</small></p>
+                            </div>
+                            <div class="hour-item">
+                                <h4>晚餐時段</h4>
+                                <p>4:30 PM – 9:30 PM<br><small>每日營業</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <!-- tab nav -->
-          <div class="our-menu-tab-nav">
-            <ul class="nav nav-tabs" id="branchTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active"
-                        id="branch1-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#branch1"
-                        type="button" role="tab"
-                        aria-selected="true">
-                  Branch&nbsp;①&nbsp;—&nbsp;Central&nbsp;District
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link"
-                        id="branch2-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#branch2"
-                        type="button" role="tab"
-                        aria-selected="false">
-                  Branch&nbsp;②&nbsp;—&nbsp;Wuri&nbsp;District
-                </button>
-              </li>
-            </ul>
-          </div><!-- /tab nav -->
+    <!-- Main Footer Section Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="巴巴印度料理館" style="height: 60px;">
+                </a>
+                
+                <!-- Uiverse Social Icons -->
+                <ul class="wrapper">
+                  <li class="icon facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100075753506880', '_blank')">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon instagram" onclick="window.open('https://www.instagram.com/babaindianrestaurant/', '_blank')">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon tripadvisor" onclick="window.open('https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung', '_blank')">
+                    <span class="tooltip">TripAdvisor</span>
+                    <svg viewBox="0 0 24 24" height="1.8em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 21.429c-5.208 0-9.429-4.221-9.429-9.429S6.792 2.571 12 2.571 21.429 6.792 21.429 12 17.208 21.429 12 21.429zM15.429 9.857a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zm-6.858 0a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zM12 16.286c-2.433 0-4.509-1.282-5.654-3.193.15-.052.298-.109.444-.171.956 1.638 2.712 2.731 4.73 2.731s3.774-1.093 4.73-2.731c.146.062.294.119.444.171-1.145 1.911-3.221 3.193-5.654 3.193z"/>
+                    </svg>
+                  </li>
+                </ul>
+            </div>
 
-          <!-- tab panes -->
-          <div class="tab-content pt-4" id="branchTabContent">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 1 Card -->
+                    <div class="footer-indian-card wow fadeInUp">
+                        <h3 class="footer-branch-title">中區店 <span>分店 1</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                台中市中區民族路 189 號
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886422290775">04 2229 0775</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- ▸ Central branch -->
-            <div class="tab-pane fade show active" id="branch1"
-                 role="tabpanel" aria-labelledby="branch1-tab">
-              <h4>BABA Indian Restaurant &bull; Central District</h4>
-              <p class="mb-2">
-                189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung <br>
-                <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2229-0775
-              </p>
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 2 Card -->
+                    <div class="footer-indian-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="footer-branch-title">烏日店 <span>分店 2</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                台中市烏日區中山路一段 212 號
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886423376667">04 2337 6667</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-              <!-- map -->
-              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.6743342755302!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo!5e0!3m2!1szh-TW!2stw!4v1746370683648!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+                <div class="col-12 text-center mt-4">
+                    <!-- Hours Pill -->
+                    <div class="footer-hours-pill wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa-regular fa-clock"></i>
+                        每日營業：10:30 AM – 02:00 PM & 04:30 PM – 09:30 PM
+                    </div>
+                </div>
 
-              <!-- branch-specific FunNow button -->
-              <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank"
-                 class="btn-default wow fadeInUp">
-                Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-              </a>
-            </div><!-- /pane Central -->
+                <!-- Hospitality Quote -->
+                <div class="col-12 text-center mt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="footer-hospitality-quote">
+                        <h3 style="font-family: var(--default-font); font-style: italic; color: var(--accent-color); font-size: 32px; margin-bottom: 8px;">"Atithi Devo Bhava"</h3>
+                        <p style="font-family: var(--body-font); color: var(--text-color); font-size: 14px; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; font-weight: 600;">賓客即為神</p>
+                    </div>
+                </div>
+            </div>
 
-            <!-- ▸ Wuri branch -->
-            <div class="tab-pane fade" id="branch2"
-                 role="tabpanel" aria-labelledby="branch2-tab">
-              <h4>BABA Indian Restaurant &bull; Wuri District</h4>
-              <p class="mb-2">
-                212&nbsp;Section&nbsp;1, Zhongshan&nbsp;Rd., Wuri&nbsp;Dist., Taichung <br>
-                <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2337-6667
-              </p>
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright mt-5 pt-4" style="border-top: 1px solid rgba(124, 45, 18, 0.1);">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-copyright-text">
+                            <p style="color: rgba(69, 26, 3, 0.5); font-size: 14px;">© 2026 巴巴印度料理館。保留所有權利。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+    </footer>
 
-              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.7812632852924!2d120.63942317552943!3d24.109186574907458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1szh-TW!2stw!4v1746370864951!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-
-              <a href="https://www.myfunnow.com/funbook/3383391234272/branch" target="_blank"
-                 class="btn-default wow fadeInUp">
-                Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-              </a>
-            </div><!-- /pane Wuri -->
-
-          </div><!-- /tab-content -->
-        </div><!-- /our-menu-tab -->
-      </div><!-- /col-lg-8 -->
-
-    </div><!-- /row -->
-  </div><!-- /container -->
-</section>
-<!-- ========= /Reserve / Location Section ========= -->
-  
-  <!-- Main Footer Section Start -->
-  <footer class="main-footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6">
-                  <!-- Footer Content Start -->
-                  <div class="footer-content">
-                      <!-- Footer Logo Start -->
-                      <div class="footer-logo">
-                          <img src="images/logo.svg" alt="">
-                      </div>
-                      <!-- Footer Logo End -->
-
-                      <!-- Footer Contact Box Start -->
-                      <div class="footer-contact-box">
-                          <!-- Footer Contact Item Start (Central) -->
-                          <div class="footer-contact-item">
-                              <div class="icon-box">
-                                  <img src="images/icon-location.svg" alt="">
-                              </div>
-                              <div class="footer-contact-content">
-                                  <p>No. 189號, Minzu Rd, Central District, Taichung City, 400（Branch 1 分店）</p>
-                                  <p><a href="tel:+886422290775">04 2229 0775</a></p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
-
-                          <!-- Footer Contact Item Start (Wuri) -->
-                          <div class="footer-contact-item">
-                              <div class="icon-box">
-                                  <img src="images/icon-location.svg" alt="">
-                              </div>
-                              <div class="footer-contact-content">
-                                  <p>No. 212號, Section 1, Zhongshan Rd, Wuri District, Taichung City, 414（Branch 2 分店）</p>
-                                  <p><a href="tel:+886423376667">04 2337 6667</a></p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
-
-                          <!-- Footer Contact Item Start (Phones & Hours) -->
-                          <div class="footer-contact-item">
-                              <div class="footer-contact-content">
-                                  <p>每日營業：10:30 AM – 02:00 PM &amp; 04:30 PM – 09:30 PM</p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
-                      </div>
-                      <!-- Footer Contact Box End -->
-                  </div>
-                  <!-- Footer Content End -->
-              </div>
-          </div>
-
-          <!-- Footer Copyright Section Start -->
-          <div class="footer-copyright">
-              <div class="row align-items-center">
-                  <div class="col-md-6">
-                      <!-- Footer Social Icon Start -->
-                      <div class="footer-social-icon">
-                          <ul>
-                              <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                              <li><a href="https://www.facebook.com/people/%E5%B7%B4%E5%B7%B4%E9%81%94%E7%88%B8%E5%8D%B0%E5%BA%A6%E6%96%99%E7%90%86%E9%A4%A8-Baba-Indian-restaurant/100075753506880/"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                          </ul>
-                      </div>
-                      <!-- Footer Social Icon End -->
-                  </div>
-
-                  <div class="col-lg-6 col-md-6">
-                      <!-- Footer Copyright Start -->
-                      <div class="footer-copyright-text">
-                          <p>Copyright © 2025 All Rights Reserved.</p>
-                      </div>
-                      <!-- Footer Copyright End -->
-                  </div>
-              </div>
-          </div>
-          <!-- Footer Copyright Section End -->
-      </div>
-  </footer>
-  <!-- Main Footer Section End -->
-
-    <!-- Jquery Library File -->
+    <!-- Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
     <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-    <!-- Magnific js file -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
     <script src="js/SmoothScroll.js"></script>
-    <!-- Parallax js -->
     <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
     <script src="js/gsap.min.js"></script>
     <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
-    <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+  <!-- LINE Floating Badge -->
+  <a href="https://lin.ee/RZef6uz" target="_blank" rel="noopener noreferrer" class="line-floating-badge" aria-label="Chat on LINE">
+    <i class="fa-brands fa-line"></i>
+    <span>LINE 聯繫</span>
+  </a>
+
+  <!-- Mobile Book Bar -->
+  <div class="mobile-book-bar">
+    <a href="contact.html" class="mobile-book-btn">
+      <i class="fas fa-calendar-check"></i>
+      立即訂位
+    </a>
+  </div>
 </body>
 </html>
