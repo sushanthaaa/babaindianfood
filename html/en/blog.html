@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+  
+    <!-- SEO Settings -->
+    <title>Indian Cuisine Blog | Baba Indian Restaurant Taichung – Explore Indian Food Culture</title>
+    <meta name="description"
+          content="Explore the Baba Indian Food blog to learn about Indian cuisine, spice knowledge, vegetarian guides, and tips for ordering authentic Indian food in Taichung.">
+    <meta name="keywords"
+          content="Taichung Indian restaurant blog, Indian food guide, Indian spices, Taichung vegetarian food, Baba Indian Restaurant">
+    <meta name="author" content="Baba Indian Restaurant">
+  
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://babaindianfood.tw/en/blog.html">
+    <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog.html">
+    <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/blog.html">
+  
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Indian Cuisine Blog | Baba Indian Restaurant Taichung">
+    <meta property="og:description" content="Discover the secrets of authentic Indian cuisine. From spice knowledge to beginner guides.">
+    <meta property="og:url"         content="https://babaindianfood.tw/en/blog.html">
+    <meta property="og:image"       content="https://babaindianfood.tw/images/hero-bg.jpg">
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <link href="../css/bootstrap.min.css"      rel="stylesheet">
+    <link href="../css/slicknav.min.css"       rel="stylesheet">
+    <link href="../css/swiper-bundle.min.css"  rel="stylesheet">
+    <link href="../css/all.min.css"            rel="stylesheet">
+    <link href="../css/animate.css"            rel="stylesheet">
+    <link href="../css/magnific-popup.css"     rel="stylesheet">
+    <link href="../css/mousecursor.css"        rel="stylesheet">
+    <link href="../css/custom.css"             rel="stylesheet">
+
+    <style>
+        .blog-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('../images/blog-hero.jpg') center center / cover no-repeat fixed;
+            overflow: hidden;
+        }
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(30, 10, 0, 0.55) 0%,
+                rgba(45, 15, 0, 0.70) 50%,
+                rgba(30, 10, 0, 0.85) 100%
+            );
+        }
+        .blog-hero .hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+        .blog-hero h1 {
+            font-family: var(--default-font);
+            font-size: 68px;
+            color: var(--secondary-color);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+        .blog-hero h1 span {
+            color: var(--accent-color);
+        }
+        .blog-hero p {
+            font-size: 22px;
+            color: rgba(255, 251, 242, 0.85);
+            font-style: italic;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        @media (max-width: 991px) {
+            .blog-hero h1 { font-size: 48px; }
+            .blog-hero p { font-size: 18px; }
+        }
+        @media (max-width: 575px) {
+            .blog-hero { min-height: 70vh; }
+            .blog-hero h1 { font-size: 36px; }
+            .blog-hero p { font-size: 16px; }
+        }
+        .blog-list-section {
+            padding: 100px 0;
+            background-color: var(--secondary-color);
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .blog-card-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        .blog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-card-img img {
+            transform: scale(1.1);
+        }
+        .blog-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .blog-card-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .blog-card-content h3 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .blog-card-content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .blog-readmore {
+            margin-top: auto;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: gap 0.3s ease;
+        }
+        .blog-readmore:hover {
+            gap: 15px;
+            color: var(--primary-color);
+        }
+    </style>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="secondary-page">
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/baba-logo.png" alt="Baba Indian Restaurant Logo" style="height: 60px; width: auto;">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                  <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="contact.html">Reserve&nbsp;Table</a></li>
+                                  <li class="nav-item submenu">
+                                      <a class="nav-link" href="#">Lang</a>
+                                      <ul class="lang-switch">
+                                          <li class="nav-item"><a class="nav-link" hreflang="zh-Hant-TW" href="../blog.html">中文</a></li>
+                                          <li class="nav-item"><a class="nav-link active" hreflang="en" href="blog.html">EN</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>        
+          <div class="responsive-menu"></div>
+        </div>
+    </header>
+
+    <!-- Full Page Hero -->
+    <section class="blog-hero">
+        <div class="hero-inner">
+            <h1>Indian Food <span>Blog</span></h1>
+            <p>Stories, recipes, and culture from the heart of India to your table in Taichung</p>
+        </div>
+    </section>
+
+    <!-- Blog List Section -->
+    <section class="blog-list-section">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-beginner-guide.jpg" alt="Beginner's Guide to Indian Food">
+                            <span class="blog-category">Dining Guide</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-beginner-guide.html">A Beginner's Guide to Indian Food in Taichung: What to Order & Spice Levels</a></h3>
+                            <p>Feeling overwhelmed by an Indian menu? This guide introduces classic dishes and explains how to choose the right spice level for your palate.</p>
+                            <a href="blog-beginner-guide.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-vegetarian.jpg" alt="Indian Vegetarian Culture">
+                            <span class="blog-category">Vegetarian Culture</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-vegetarian.html">Vegetarian Heaven: Exploring the Diverse World of Indian Plant-Based Cuisine</a></h3>
+                            <p>India offers some of the world's most sophisticated vegetarian food. Join us as we explore flavorful Paneer and hearty lentil curries.</p>
+                            <a href="blog-vegetarian.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-tandoor-thumb.jpg" alt="North Indian Curries & Breads">
+                            <span class="blog-category">Education</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-tandoor-curries.html">The Art of North Indian Curries & Tandoori Breads: Authentic Flavors Explained</a></h3>
+                            <p>Discover the heart of North Indian cuisine. From clay-oven baked Naan to rich Masala gravies, we reveal the secrets behind these icons.</p>
+                            <a href="blog-tandoor-curries.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-hand-eating.jpg" alt="Indian Family Dining Traditionally">
+                            <span class="blog-category">Culture</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-hand-eating.html">Why Indian Families Eat with Their Hands — And What It Really Means</a></h3>
+                            <p>Discover the cultural meaning behind hand-eating in India, from tradition and connection to food, to family values passed through generations.</p>
+                            <a href="blog-hand-eating.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-north-south.jpg" alt="North vs South Indian Dishes">
+                            <span class="blog-category">Food Traditions</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-north-south.html">Not All Curries Are Spicy: Understanding North vs South Indian Food Traditions</a></h3>
+                            <p>Explore how geography and culture shape the flavors of North and South Indian cuisine — and why they taste so different.</p>
+                            <a href="blog-north-south.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-veg-thali.jpg" alt="Indian Vegetarian Thali">
+                            <span class="blog-category">Vegetarian</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-veg-india.html">Vegetarianism in India: How Millions Live Meat-Free Without Missing Flavor</a></h3>
+                            <p>Learn how India's vegetarian culture creates bold flavors without meat and inspires plant-based diets worldwide.</p>
+                            <a href="blog-veg-india.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-roti-meal.jpg" alt="Indian Home-Style Meal with Roti">
+                            <span class="blog-category">Comparison</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-rice-roti.html">From Rice to Roti: How Indian Daily Meals Differ from Taiwanese Home Cooking</a></h3>
+                            <p>A cultural comparison of Indian and Taiwanese home meals, ingredients, and everyday food traditions.</p>
+                            <a href="blog-rice-roti.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="../images/blog-masala-spices.jpg" alt="Indian Spice Bowls and Masala">
+                            <span class="blog-category">Spice Guide</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-masala.html">Masala Isn't One Spice — Here's What Indians Really Mean by "Masala"</a></h3>
+                            <p>Understand what masala really means and how spice blends form the heart of Indian cooking.</p>
+                            <a href="blog-masala.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="Baba Indian Restaurant" style="height: 60px;">
+                </a>
+                <ul class="wrapper">
+                  <li class="icon facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100075753506880', '_blank')">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon instagram" onclick="window.open('https://www.instagram.com/babaindianrestaurant/', '_blank')">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon tripadvisor" onclick="window.open('https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung', '_blank')">
+                    <span class="tooltip">TripAdvisor</span>
+                    <svg viewBox="0 0 24 24" height="1.8em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 21.429c-5.208 0-9.429-4.221-9.429-9.429S6.792 2.571 12 2.571 21.429 6.792 21.429 12 17.208 21.429 12 21.429zM15.429 9.857a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zm-6.858 0a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zM12 16.286c-2.433 0-4.509-1.282-5.654-3.193.15-.052.298-.109.444-.171.956 1.638 2.712 2.731 4.73 2.731s3.774-1.093 4.73-2.731c.146.062.294.119.444.171-1.145 1.911-3.221 3.193-5.654 3.193z"/>
+                    </svg>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-indian-card wow fadeInUp">
+                        <h3 class="footer-branch-title">Central <span>Branch 1</span></h3>
+                        <div class="footer-contact-info">
+                            <p><i class="fa-solid fa-location-dot"></i> No. 189, Minzu Rd, Central Dist., Taichung</p>
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:+886422290775">04 2229 0775</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-indian-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="footer-branch-title">Wuri <span>Branch 2</span></h3>
+                        <div class="footer-contact-info">
+                            <p><i class="fa-solid fa-location-dot"></i> No. 212, Sec. 1, Zhongshan Rd, Wuri Dist., Taichung</p>
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:+886423376667">04 2337 6667</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright mt-5 pt-4" style="border-top: 1px solid rgba(124, 45, 18, 0.1);">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-copyright-text">
+                            <p style="color: rgba(69, 26, 3, 0.5); font-size: 14px;">© 2026 Baba Indian Restaurant. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/SmoothScroll.js"></script>
+    <script src="../js/parallaxie.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/magiccursor.js"></script>
+    <script src="../js/SplitText.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/function.js"></script>
+
+    <a href="https://lin.ee/RZef6uz" target="_blank" class="line-floating-badge">
+        <i class="fa-brands fa-line"></i>
+        <span>Chat on LINE</span>
+    </a>
+
+    <div class="mobile-book-bar">
+        <a href="contact.html"><i class="fa-solid fa-calendar-check"></i>&nbsp; Book a Table</a>
+    </div>
+</body>
+</html>

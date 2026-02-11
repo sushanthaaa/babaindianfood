@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noindex, follow">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Sushanthaaa">
@@ -41,11 +42,27 @@
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
+    </div>
+  </div>
 	</div>
 	<!-- Preloader End -->
 
@@ -56,7 +73,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="./">
-						<img src="images/logo.svg" alt="Logo">
+						<img src="images/baba-logo.png" alt="巴巴印度料理館 Logo" style="height: 60px; width: auto;">
 					</a>
 					<!-- Logo End -->
 
@@ -280,7 +297,7 @@
               <!-- ▸ Central branch -->
               <div class="tab-pane fade show active" id="branch1"
                    role="tabpanel" aria-labelledby="branch1-tab">
-                <h4>BABA Indian Restaurant &bull; Central District</h4>
+                <h4>巴巴印度料理館 &bull; Central District</h4>
                 <p class="mb-2">
                   189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung 市 <br>
                   <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2221-7258
@@ -301,7 +318,7 @@
               <!-- ▸ Wuri branch -->
               <div class="tab-pane fade" id="branch2"
                    role="tabpanel" aria-labelledby="branch2-tab">
-                <h4>BABA Indian Restaurant &bull; Wuri District</h4>
+                <h4>巴巴印度料理館 &bull; Wuri District</h4>
                 <p class="mb-2">
                   212&nbsp;Zhongshan&nbsp;Rd., Wuri&nbsp;Dist., Taichung 市 <br>
                   <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;987-6543
@@ -329,67 +346,94 @@
     <!-- Main Footer Section Start -->
     <footer class="main-footer">
         <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="巴巴印度料理館" style="height: 60px;">
+                </a>
+                
+                <!-- Uiverse Social Icons -->
+                <ul class="wrapper">
+                  <li class="icon facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100075753506880', '_blank')">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon instagram" onclick="window.open('https://www.instagram.com/babaindianrestaurant/', '_blank')">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon tripadvisor" onclick="window.open('https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung', '_blank')">
+                    <span class="tooltip">TripAdvisor</span>
+                    <svg viewBox="0 0 24 24" height="1.8em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 21.429c-5.208 0-9.429-4.221-9.429-9.429S6.792 2.571 12 2.571 21.429 6.792 21.429 12 17.208 21.429 12 21.429zM15.429 9.857a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zm-6.858 0a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zM12 16.286c-2.433 0-4.509-1.282-5.654-3.193.15-.052.298-.109.444-.171.956 1.638 2.712 2.731 4.73 2.731s3.774-1.093 4.73-2.731c.146.062.294.119.444.171-1.145 1.911-3.221 3.193-5.654 3.193z"/>
+                    </svg>
+                  </li>
+                </ul>
+            </div>
+
             <div class="row">
-                <div class="col-lg-6">
-                    <!-- Footer Content Start -->
-                    <div class="footer-content">
-                        <!-- Footer Logo Start -->
-                        <div class="footer-logo">
-                            <img src="images/logo.svg" alt="">
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 1 Card -->
+                    <div class="footer-indian-card wow fadeInUp">
+                        <h3 class="footer-branch-title">中區店 <span>分店 1</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                台中市中區民族路 189 號
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886422290775">04 2229 0775</a>
+                            </p>
                         </div>
-                        <!-- Footer Logo End -->
-
-                        <!-- Footer Contact Box Start -->
-                        <div class="footer-contact-box">
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images/icon-location.svg" alt="">
-                                </div>
-                                <div class="footer-contact-content">
-                                    <p>No. 189號, Minzu Rd, Central District, Taichung City, 400</p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images/icon-phone.svg" alt="">
-                                </div>
-                                <div class="footer-contact-content">
-                                    <p><a href="tel:+886 423 376 667 ">+886 423 376 667 </a></p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-                        </div>
-                        <!-- Footer Contact Box End -->
                     </div>
-                    <!-- Footer Content End -->
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 2 Card -->
+                    <div class="footer-indian-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="footer-branch-title">烏日店 <span>分店 2</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                台中市烏日區中山路一段 212 號
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886423376667">04 2337 6667</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <!-- Hours Pill -->
+                    <div class="footer-hours-pill wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa-regular fa-clock"></i>
+                        每日營業：10:30 AM – 02:00 PM & 04:30 PM – 09:30 PM
+                    </div>
+                </div>
+
+                <!-- Hospitality Quote -->
+                <div class="col-12 text-center mt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="footer-hospitality-quote">
+                        <h3 style="font-family: var(--default-font); font-style: italic; color: var(--accent-color); font-size: 32px; margin-bottom: 8px;">"Atithi Devo Bhava"</h3>
+                        <p style="font-family: var(--body-font); color: var(--text-color); font-size: 14px; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; font-weight: 600;">賓客即為神</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Footer Copyright Section Start -->
-            <div class="footer-copyright">
+            <div class="footer-copyright mt-5 pt-4" style="border-top: 1px solid rgba(124, 45, 18, 0.1);">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <!-- Footer Social Icon Start -->
-                        <div class="footer-social-icon">
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Social Icon End -->
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <!-- Footer Copyright Start -->
+                    <div class="col-md-12 text-center">
                         <div class="footer-copyright-text">
-                            <p>Copyright © 2025 All Rights Reserved.</p>
+                            <p style="color: rgba(69, 26, 3, 0.5); font-size: 14px;">© 2026 巴巴印度料理館。保留所有權利。</p>
                         </div>
-                        <!-- Footer Copyright End -->
                     </div>
                 </div>
             </div>
@@ -429,5 +473,19 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+  <!-- LINE Floating Badge -->
+  <a href="https://lin.ee/RZef6uz" target="_blank" rel="noopener noreferrer" class="line-floating-badge" aria-label="Chat on LINE">
+u    <i class="fa-brands fa-line"></i>
+    <span>LINE 聯繫</span>
+  </a>
+
+  <!-- Mobile Book Bar -->
+  <div class="mobile-book-bar">
+    <a href="contact.html" class="mobile-book-btn">
+      <i class="fas fa-calendar-check"></i>
+      立即訂位
+    </a>
+  </div>
 </body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "projectId": "073f2c4e-e937-4b5f-88a1-a764e1cf6e09",
+  "createdAt": 1769318890312,
+  "startupCommands": [
+    "python3 -m http.server 8000 --directory html"
+  ],
+  "vercelProjectId": "prj_SNUzmmH3OBDk2zmCadSfZ6D3yY0X"
+}

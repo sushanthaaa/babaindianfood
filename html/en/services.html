@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
       
         <!-- SEO essentials -->
         <title>Baba Indian Restaurant Taichung – Authentic Indian Cuisine in Taiwan</title>
@@ -15,15 +16,15 @@
         <meta name="author" content="Baba Indian Restaurant">
       
         <!-- Canonical & language links -->
-        <link rel="canonical" href="https://babaindianfood.tw/en/">
-        <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/">
-        <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/">
+    <link rel="canonical" href="https://babaindianfood.tw/en/services.html">
+          <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/services.html">
+          <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/services.html">
       
         <!-- Open Graph (FB / LINE) -->
         <meta property="og:type"        content="website">
         <meta property="og:title"       content="Baba Indian Restaurant Taichung">
         <meta property="og:description" content="Authentic curry, tandoor & vegetarian dishes – reserve online.">
-        <meta property="og:url"         content="https://babaindianfood.tw/en/">
+        <meta property="og:url"         content="https://babaindianfood.tw/en/services.html">
         <meta property="og:image"       content="https://babaindianfood.tw/images/hero-img.jpg">
       
         <!-- Twitter card -->
@@ -33,35 +34,258 @@
         <meta name="twitter:image"       content="https://babaindianfood.tw/images/hero-img.jpg">
       
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
       
         <!-- Fonts & CSS (original links) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       
-        <link href="/css/bootstrap.min.css"      rel="stylesheet">
-        <link href="/css/slicknav.min.css"       rel="stylesheet">
-        <link href="/css/swiper-bundle.min.css"  rel="stylesheet">
-        <link href="/css/all.min.css"            rel="stylesheet">
-        <link href="/css/animate.css"            rel="stylesheet">
-        <link href="/css/magnific-popup.css"     rel="stylesheet">
-        <link href="/css/mousecursor.css"        rel="stylesheet">
-        <link href="/css/custom.css"             rel="stylesheet">
+        <link href="../css/bootstrap.min.css"      rel="stylesheet">
+        <link href="../css/slicknav.min.css"       rel="stylesheet">
+        <link href="../css/swiper-bundle.min.css"  rel="stylesheet">
+        <link href="../css/all.min.css"            rel="stylesheet">
+        <link href="../css/animate.css"            rel="stylesheet">
+        <link href="../css/magnific-popup.css"     rel="stylesheet">
+        <link href="../css/mousecursor.css"        rel="stylesheet">
+        <link href="../css/custom.css"             rel="stylesheet">
+    <style>
+      /* Reservation Section Redesign */
+      .reserve-table {
+        background-color: #FFFAF0 !important;
+        position: relative;
+      }
+      .reserve-table .section-title h3 {
+        font-family: var(--body-font);
+        color: var(--accent-color);
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+      .reserve-table .section-title h2 {
+        font-size: 56px;
+        line-height: 1.1;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 40px;
+      }
+      .reserve-table .opening-hours-title {
+        font-family: var(--default-font);
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+      }
+      .reserve-table .opening-hours-text {
+        font-family: var(--body-font);
+        font-size: 18px;
+        color: var(--text-color);
+        margin-bottom: 10px;
+      }
+      .reserve-table .branch-tabs-pill {
+        background: #F3EFE6;
+        border-radius: 50px;
+        padding: 8px;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      .reserve-table .nav-pills .nav-link {
+        border-radius: 50px;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px 25px;
+        transition: all 0.3s ease;
+      }
+      .reserve-table .nav-pills .nav-link.active {
+        background: transparent;
+        color: var(--accent-color);
+      }
+      .reserve-table .tab-separator {
+        width: 6px;
+        height: 6px;
+        background: var(--accent-color);
+        border-radius: 50%;
+        margin: 0 15px;
+      }
+      .reserve-table .branch-info h4 {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      .reserve-table .branch-info p {
+        font-size: 18px;
+        color: var(--text-color);
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+      .reserve-table .branch-info i {
+        color: var(--primary-color);
+        margin-right: 10px;
+      }
+
+      /* Indian Aesthetic Footer Redesign */
+      .main-footer {
+        background-color: #FFFAF0 !important;
+        padding-top: 100px;
+        position: relative;
+        overflow: hidden;
+      }
+      .main-footer::before {
+        content: '';
+        position: absolute;
+        top: -150px;
+        right: -150px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, transparent 70%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' opacity='0.08'%3E%3Cpath d='M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z' fill='%23D97706'/%3E%3C/svg%3E");
+        background-size: 100px 100px;
+        opacity: 0.2;
+        z-index: 0;
+      }
+      .footer-indian-card {
+        background: rgba(124, 45, 18, 0.03);
+        border: 1px solid rgba(124, 45, 18, 0.1);
+        border-radius: 20px;
+        padding: 35px;
+        position: relative;
+        transition: all 0.4s ease;
+        margin-bottom: 30px;
+        z-index: 1;
+      }
+      .footer-indian-card:hover {
+        border-color: var(--accent-color);
+        transform: translateY(-5px);
+        background: rgba(124, 45, 18, 0.05);
+      }
+      .footer-indian-card::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D97706' opacity='0.1'%3E%3Cpath d='M12 2L14.5 9H21.5L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2.5 9H9.5L12 2Z'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .footer-branch-title {
+        font-family: var(--default-font);
+        color: var(--accent-color);
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .footer-branch-title span {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: rgba(217, 119, 6, 0.1);
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-family: var(--body-font);
+      }
+      .footer-contact-info p {
+        color: var(--text-color);
+        font-size: 17px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+      }
+      .footer-contact-info i {
+        color: var(--accent-color);
+        font-size: 18px;
+        margin-top: 4px;
+      }
+      .footer-contact-info a {
+        color: var(--text-color);
+        transition: color 0.3s;
+      }
+      .footer-contact-info a:hover {
+        color: var(--accent-color);
+      }
+      .footer-hours-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(217, 119, 6, 0.08);
+        padding: 10px 25px;
+        border-radius: 50px;
+        border: 1px dashed rgba(217, 119, 6, 0.3);
+        margin-top: 10px;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 15px;
+      }
+      .footer-logo-box {
+        margin-bottom: 50px;
+        border-bottom: 1px solid rgba(124, 45, 18, 0.1);
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .footer-social-pill {
+        display: flex;
+        gap: 15px;
+      }
+      .footer-social-pill a {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(217, 119, 6, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        border: 1px solid rgba(217, 119, 6, 0.1);
+        transition: all 0.3s ease;
+      }
+      .footer-social-pill a:hover {
+        background: var(--accent-color);
+        color: #fff;
+        transform: rotate(360deg);
+      }
+    </style>
   <!-- Vercel Web Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
       </head>
-<body>
+<body class="secondary-page">
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
-		</div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
+    </div>
+  </div>
 	</div>
 	<!-- Preloader End -->
 
@@ -72,8 +296,8 @@
             <div class="container">
         
                 <!-- Logo Start -->
-                <a class="navbar-brand" href="/en/">
-                    <img src="/images/logo.svg" alt="Baba Indian Restaurant Logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/baba-logo.png" alt="Baba Indian Restaurant Logo" style="height: 60px; width: auto;">
                 </a>
                 <!-- Logo End -->
         
@@ -81,18 +305,19 @@
                 <div class="collapse navbar-collapse main-menu">
                     <div class="nav-menu-wrapper">
                         <ul class="navbar-nav mr-auto" id="menu">
-                            <li class="nav-item"><a class="nav-link" href="/en/index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/en/about.html">About&nbsp;Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/en/services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/en/menu.html">Menu</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/en/contact.html">Reserve&nbsp;Table</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About&nbsp;Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Reserve&nbsp;Table</a></li>
         
                             <!-- Language Switcher -->
                             <li class="nav-item submenu">
                                 <a class="nav-link" href="#">Language</a>
                                 <ul class="lang-switch">
-                                    <li class="nav-item"><a class="nav-link" hreflang="zh-Hant-TW" href="/index.html">中文</a></li>
-                                    <li class="nav-item"><a class="nav-link active" hreflang="en" href="/en/index.html">EN</a></li>
+                                    <li class="nav-item"><a class="nav-link" hreflang="zh-Hant-TW" href="../index.html">中文</a></li>
+                                    <li class="nav-item"><a class="nav-link active" hreflang="en" href="index.html">EN</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -110,27 +335,18 @@
   </header>
 	<!-- Header End -->
 
-    <!-- Page Header Start -->
-	<div class="page-header parallaxie">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<!-- Page Header Box Start -->
-					<div class="page-header-box">
-						<h1 class="text-anime-style-2" data-cursor="-opaque">Services</h1>
-						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">service</li>
-							</ol>
-						</nav>
-					</div>
-					<!-- Page Header Box End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Page Header End -->
+    <!-- Redesigned Hero -->
+    <section class="page-hero" style="background-image: url('../images/hero-services.jpg')">
+        <div class="container">
+            <h1 class="text-anime-style-2">Our Services</h1>
+            <nav class="wow fadeInUp" data-wow-delay="0.3s">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
     <!-- Page Services Start -->
     <div class="page-services">
@@ -140,11 +356,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp">
                         <div class="icon-box">
-                            <img src="images/icon-service-1.svg" alt="">
+                            <img src="../images/icon-service-1.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Dine-In Experience</h3>
                             <p>Enjoy an authentic Indian dining experience in our welcoming and comfortable atmosphere. From flavorful dishes to warm hospitality, every visit is designed to delight your senses and create lasting memories.</p>
+                            <a href="contact.html" class="service-cta-btn">Reserve a Table</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -154,11 +371,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="icon-box">
-                            <img src="images/icon-service-2.svg" alt="">
+                            <img src="../images/icon-service-2.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Online Table Reservations</h3>
-                            <p>Reserve your table effortlessly through FunNow or our website’s reservation page. Our easy online booking ensures your table is ready and waiting for your visit, making dining out convenient and stress-free.</p>
+                            <p>Reserve your table effortlessly through FunNow or our website's reservation page. Our easy online booking ensures your table is ready and waiting for your visit, making dining out convenient and stress-free.</p>
+                            <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank" class="service-cta-btn">Book on FunNow</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -168,11 +386,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="icon-box">
-                            <img src="images/icon-service-3.svg" alt="">
+                            <img src="../images/icon-service-3.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Home Delivery Service</h3>
                             <p>Savor our delicious Indian dishes from the comfort of your own home. We partner with popular delivery services like Uber Eats and Foodpanda to bring your favorite meals directly to your doorstep.</p>
+                            <a href="https://www.ubereats.com" target="_blank" class="service-cta-btn">Order Delivery</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -182,11 +401,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="icon-box">
-                            <img src="images/icon-service-4.svg" alt="">
+                            <img src="../images/icon-service-4.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Catering for Events</h3>
-                            <p>Make your events memorable with our specialized catering services. Whether it’s a wedding, corporate event, or a casual gathering, we offer customized menus that perfectly match your preferences and needs.</p>
+                            <p>Make your events memorable with our specialized catering services. Whether it's a wedding, corporate event, or a casual gathering, we offer customized menus that perfectly match your preferences and needs.</p>
+                            <a href="https://www.facebook.com/profile.php?id=100075753506880" target="_blank" class="service-cta-btn">Inquire on Facebook</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -196,11 +416,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
                         <div class="icon-box">
-                            <img src="images/icon-service-5.svg" alt="">
+                            <img src="../images/icon-service-5.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Takeout Orders</h3>
                             <p>In a hurry or want to enjoy our cuisine elsewhere? Our convenient takeout service allows you to order your favorite dishes for easy pickup at the restaurant—freshly prepared, packaged, and ready to go.</p>
+                            <a href="tel:+886422290775" class="service-cta-btn">Call to Order</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -210,11 +431,12 @@
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="1s">
                         <div class="icon-box">
-                            <img src="images/icon-service-6.svg" alt="">
+                            <img src="../images/icon-service-6.svg" alt="">
                         </div>
                         <div class="service-item-content">
                             <h3>Private Dining</h3>
                             <p>Celebrate your special occasions with privacy and exclusivity. Our restaurant offers private dining options ideal for intimate dinners, family celebrations, or corporate meetings. Contact us on Facebook to personalize your experience.</p>
+                            <a href="https://www.facebook.com/profile.php?id=100075753506880" target="_blank" class="service-cta-btn">Contact Us</a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -229,228 +451,242 @@
   <div class="container">
     <div class="row g-lg-5 align-items-start">
 
-      <!-- ▸ ①  Left column – generic CTA & hours -->
-      <div class="col-lg-4">
+      <!-- ▸ ①  Left column – Title & Hours -->
+      <div class="col-lg-5">
         <div class="reserve-table-content">
-
-          <!-- heading -->
           <div class="section-title">
-            <h3 class="wow fadeInUp">reserve&nbsp;online</h3>
-            <h2 class="text-anime-style-2" data-cursor="-opaque">
-              Book instantly on&nbsp;<span>FunNow</span>
+            <h3 class="wow fadeInUp" style="visibility: visible;">• RESERVE ONLINE</h3>
+            <h2 class="text-anime-style-2" style="font-family: var(--default-font); text-transform: uppercase;">
+              BOOK INSTANTLY ON <span style="color: var(--accent-color);">FUNNOW</span>
             </h2>
           </div>
 
-          <!-- opening hours -->
-          <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.1s">
-            <h3>Opening&nbsp;Hours</h3>
-            <ul>
-              <li>Daily: <span>10:30 AM – 02:00 PM &amp; 04:30 PM – 09:30 PM</span></li>
+          <div class="opening-hours-box wow fadeInUp" data-wow-delay="0.2s">
+            <h3 class="opening-hours-title">Opening Hours</h3>
+            <p class="opening-hours-text">Daily: 10:30 AM – 02:00 PM</p>
+            <p class="opening-hours-text">& 04:30 PM – 09:30 PM</p>
+          </div>
+
+          <p class="small mt-4 wow fadeInUp" data-wow-delay="0.3s">
+            Select the branch on the right and tap <b>Reserve on FunNow</b>.
+          </p>
+        </div>
+      </div>
+
+      <!-- ▸ ②  Right column – Tabs & Map -->
+      <div class="col-lg-7">
+        <div class="text-center text-lg-start">
+          <!-- Pill Tabs -->
+          <div class="branch-tabs-pill wow fadeInUp">
+            <ul class="nav nav-pills" id="branchTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="branch1-tab" data-bs-toggle="pill" data-bs-target="#branch1" type="button" role="tab">Branch ① — Central District</button>
+              </li>
+              <div class="tab-separator"></div>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="branch2-tab" data-bs-toggle="pill" data-bs-target="#branch2" type="button" role="tab">Branch ② — Wuri District</button>
+              </li>
             </ul>
           </div>
 
-          <!-- friendly reminder -->
-          <p class="small mb-0 wow fadeInUp" data-wow-delay="0.15s">
-            Select the branch tab on the right and tap&nbsp;<b>Reserve on FunNow</b>.
-          </p>
+          <!-- Tab Content -->
+          <div class="tab-content" id="branchTabContent">
+            <!-- Central Branch -->
+            <div class="tab-pane fade show active" id="branch1" role="tabpanel">
+              <div class="branch-info wow fadeInUp">
+                <h4>BABA Indian Restaurant • Central District</h4>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> 189 Minzu Rd., Central Dist., Taichung <br>
+                  <i class="fa-solid fa-phone"></i> (04) 2229-0775
+                </p>
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.6743342755302!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo!5e0!3m2!1szh-TW!2stw!4v1746370683648!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                  <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank" class="btn-default">Reserve on FunNow</a>
+                    <a href="https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung" target="_blank"
+                       class="btn-default wow fadeInUp" style="background: var(--tripadvisor-color); color: #fff;">
+                      Review on TripAdvisor&nbsp;<i class="fa-brands fa-tripadvisor ms-1"></i>
+                    </a>
+                  </div>
 
-        </div><!-- /reserve-table-content -->
-      </div><!-- /col -->
-
-      <!-- ▸ ②  Right column – tabs, maps, branch buttons -->
-      <div class="col-lg-8">
-        <div class="our-menu-tab">
-
-          <!-- tab nav -->
-          <div class="our-menu-tab-nav">
-            <ul class="nav nav-tabs" id="branchTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active"
-                        id="branch1-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#branch1"
-                        type="button" role="tab"
-                        aria-selected="true">
-                  Branch&nbsp;①&nbsp;&mdash;&nbsp;Central&nbsp;District
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link"
-                        id="branch2-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#branch2"
-                        type="button" role="tab"
-                        aria-selected="false">
-                  Branch&nbsp;②&nbsp;&mdash;&nbsp;Wuri&nbsp;District
-                </button>
-              </li>
-            </ul>
-          </div><!-- /tab nav -->
-
-          <!-- tab panes -->
-          <div class="tab-content pt-4" id="branchTabContent">
-
-            <!-- ▸ Central branch -->
-            <div class="tab-pane fade show active" id="branch1"
-                 role="tabpanel" aria-labelledby="branch1-tab">
-              <h4>BABA Indian Restaurant &bull; Central District</h4>
-              <p class="mb-2">
-                189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung <br>
-                <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2229-0775
-              </p>
-
-              <!-- map -->
-              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.6743342755302!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo!5e0!3m2!1szh-TW!2stw!4v1746370683648!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
+            </div>
 
-              <!-- branch-specific FunNow button -->
-              <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank"
-                 class="btn-default wow fadeInUp">
-                Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-              </a>
-            </div><!-- /pane Central -->
+            <!-- Wuri Branch -->
+            <div class="tab-pane fade" id="branch2" role="tabpanel">
+              <div class="branch-info">
+                <h4>BABA Indian Restaurant • Wuri District</h4>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> 212 Section 1, Zhongshan Rd., Wuri Dist., Taichung <br>
+                  <i class="fa-solid fa-phone"></i> (04) 2337-6667
+                </p>
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.7812632852924!2d120.63942317552943!3d24.109186574907458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1szh-TW!2stw!4v1746370864951!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                  <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="https://www.myfunnow.com/funbook/3383391234272/branch" target="_blank" class="btn-default">Reserve on FunNow</a>
+                    <a href="https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung" target="_blank"
+                       class="btn-default wow fadeInUp" style="background: var(--tripadvisor-color); color: #fff;">
+                      Review on TripAdvisor&nbsp;<i class="fa-brands fa-tripadvisor ms-1"></i>
+                    </a>
+                  </div>
 
-            <!-- ▸ Wuri branch -->
-            <div class="tab-pane fade" id="branch2"
-                 role="tabpanel" aria-labelledby="branch2-tab">
-              <h4>BABA Indian Restaurant &bull; Wuri District</h4>
-              <p class="mb-2">
-                212&nbsp;Section&nbsp;1, Zhongshan&nbsp;Rd., Wuri&nbsp;Dist., Taichung <br>
-                <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2337-6667
-              </p>
-
-              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.7812632852924!2d120.63942317552943!3d24.109186574907458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1szh-TW!2stw!4v1746370864951!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <a href="https://www.myfunnow.com/funbook/3383391234272/branch" target="_blank"
-                 class="btn-default wow fadeInUp">
-                Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-              </a>
-            </div><!-- /pane Wuri -->
-
-          </div><!-- /tab-content -->
-        </div><!-- /our-menu-tab -->
-      </div><!-- /col-lg-8 -->
-
-    </div><!-- /row -->
-  </div><!-- /container -->
+    </div>
+  </div>
 </section>
 <!-- ========= /Reserve / Location Section ========= -->
   
-  <!-- Main Footer Section Start -->
-  <footer class="main-footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6">
-                  <!-- Footer Content Start -->
-                  <div class="footer-content">
-                      <!-- Footer Logo Start -->
-                      <div class="footer-logo">
-                          <img src="images/logo.svg" alt="">
-                      </div>
-                      <!-- Footer Logo End -->
+    <!-- Main Footer Section Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="Baba Indian Restaurant" style="height: 60px;">
+                </a>
+                
+                <!-- Uiverse Social Icons -->
+                <ul class="wrapper">
+                  <li class="icon facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100075753506880', '_blank')">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon instagram" onclick="window.open('https://www.instagram.com/babaindianrestaurant/', '_blank')">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon tripadvisor" onclick="window.open('https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung', '_blank')">
+                    <span class="tooltip">TripAdvisor</span>
+                    <svg viewBox="0 0 24 24" height="1.8em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 21.429c-5.208 0-9.429-4.221-9.429-9.429S6.792 2.571 12 2.571 21.429 6.792 21.429 12 17.208 21.429 12 21.429zM15.429 9.857a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zm-6.858 0a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zM12 16.286c-2.433 0-4.509-1.282-5.654-3.193.15-.052.298-.109.444-.171.956 1.638 2.712 2.731 4.73 2.731s3.774-1.093 4.73-2.731c.146.062.294.119.444.171-1.145 1.911-3.221 3.193-5.654 3.193z"/>
+                    </svg>
+                  </li>
+                </ul>
+            </div>
 
-                      <!-- Footer Contact Box Start -->
-                      <div class="footer-contact-box">
-                          <!-- Footer Contact Item Start (Central) -->
-                          <div class="footer-contact-item">
-                              <div class="icon-box">
-                                  <img src="/images/icon-location.svg" alt="">
-                              </div>
-                              <div class="footer-contact-content">
-                                  <p>No. 189號, Minzu Rd, Central District, Taichung City, 400(Branch 1)</p>
-                                  <p><a href="tel:+886422290775">04 2229 0775</a></p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 1 Card -->
+                    <div class="footer-indian-card wow fadeInUp">
+                        <h3 class="footer-branch-title">Central District <span>Branch 1</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                No. 189, Minzu Rd, Central District, Taichung City
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886422290775">04 2229 0775</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                          <!-- Footer Contact Item Start (Wuri) -->
-                          <div class="footer-contact-item">
-                              <div class="icon-box">
-                                  <img src="/images/icon-location.svg" alt="">
-                              </div>
-                              <div class="footer-contact-content">
-                                  <p>No. 212號, Section 1, Zhongshan Rd, Wuri District, Taichung City, 414(Branch 2)</p>
-                                  <p><a href="tel:+886423376667">04 2337 6667</a></p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
+                <div class="col-lg-6 col-md-12">
+                    <!-- Branch 2 Card -->
+                    <div class="footer-indian-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="footer-branch-title">Wuri District <span>Branch 2</span></h3>
+                        <div class="footer-contact-info">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                No. 212, Section 1, Zhongshan Rd, Wuri District, Taichung
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+886423376667">04 2337 6667</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                          <!-- Footer Contact Item Start (Phones & Hours) -->
-                          <div class="footer-contact-item">
-                              <div class="footer-contact-content">
-                                  <p>Daily: 10:30 AM – 02:00 PM &amp; 04:30 PM – 09:30 PM</p>
-                              </div>
-                          </div>
-                          <!-- Footer Contact Item End -->
-                      </div>
-                      <!-- Footer Contact Box End -->
-                  </div>
-                  <!-- Footer Content End -->
-              </div>
-          </div>
+                <div class="col-12 text-center mt-4">
+                    <!-- Hours Pill -->
+                    <div class="footer-hours-pill wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa-regular fa-clock"></i>
+                        Daily: 10:30 AM – 02:00 PM & 04:30 PM – 09:30 PM
+                    </div>
+                </div>
 
-          <!-- Footer Copyright Section Start -->
-          <div class="footer-copyright">
-              <div class="row align-items-center">
-                  <div class="col-md-6">
-                      <!-- Footer Social Icon Start -->
-                      <div class="footer-social-icon">
-                          <ul>
-                              <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                              <li><a href="https://www.facebook.com/people/%E5%B7%B4%E5%B7%B4%E9%81%94%E7%88%B8%E5%8D%B0%E5%BA%A6%E6%96%99%E7%90%86%E9%A4%A8-Baba-Indian-restaurant/100075753506880/"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                          </ul>
-                      </div>
-                      <!-- Footer Social Icon End -->
-                  </div>
+                <!-- Hospitality Quote -->
+                <div class="col-12 text-center mt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="footer-hospitality-quote">
+                        <h3 style="font-family: var(--default-font); font-style: italic; color: var(--accent-color); font-size: 32px; margin-bottom: 8px;">"Atithi Devo Bhava"</h3>
+                        <p style="font-family: var(--body-font); color: var(--text-color); font-size: 14px; text-transform: uppercase; letter-spacing: 4px; opacity: 0.7; font-weight: 600;">The Guest is God</p>
+                    </div>
+                </div>
+            </div>
 
-                  <div class="col-lg-6 col-md-6">
-                      <!-- Footer Copyright Start -->
-                      <div class="footer-copyright-text">
-                          <p>Copyright © 2025 All Rights Reserved.</p>
-                      </div>
-                      <!-- Footer Copyright End -->
-                  </div>
-              </div>
-          </div>
-          <!-- Footer Copyright Section End -->
-      </div>
-  </footer>
+            <!-- Footer Copyright Section Start -->
+            <div class="footer-copyright mt-5 pt-4" style="border-top: 1px solid rgba(124, 45, 18, 0.1);">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-copyright-text">
+                            <p style="color: rgba(69, 26, 3, 0.5); font-size: 14px;">Copyright © 2026 Baba Indian Restaurant. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright Section End -->
+        </div>
+    </footer>
   <!-- Main Footer Section End -->
 
     <!-- Jquery Library File -->
-    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- Validator js file -->
-    <script src="/js/validator.min.js"></script>
+    <script src="../js/validator.min.js"></script>
     <!-- SlickNav js file -->
-    <script src="/js/jquery.slicknav.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
     <!-- Swiper js file -->
-    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <!-- Counter js file -->
-    <script src="/js/jquery.waypoints.min.js"></script>
-    <script src="/js/jquery.counterup.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
     <!-- Magnific js file -->
-    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
     <!-- SmoothScroll -->
-    <script src="/js/SmoothScroll.js"></script>
+    <script src="../js/SmoothScroll.js"></script>
     <!-- Parallax js -->
-    <script src="/js/parallaxie.js"></script>
+    <script src="../js/parallaxie.js"></script>
     <!-- MagicCursor js file -->
-    <script src="/js/gsap.min.js"></script>
-    <script src="/js/magiccursor.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/magiccursor.js"></script>
     <!-- Text Effect js file -->
-    <script src="/js/SplitText.js"></script>
-    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="../js/SplitText.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
     <!-- YTPlayer js File -->
-    <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="../js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
-    <script src="/js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <!-- TripAdvisor Floating Badge -->
+    <a href="https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung" target="_blank" class="ta-floating-badge">
+        <i class="fa-brands fa-tripadvisor"></i>
+        <span>Review Us</span>
+    </a>
+
+    <a href="https://lin.ee/RZef6uz" target="_blank" class="line-floating-badge">
+        <i class="fa-brands fa-line"></i>
+        <span>Chat on LINE</span>
+    </a>
+
+    <div class="mobile-book-bar">
+        <a href="contact.html"><i class="fa-solid fa-calendar-check"></i>&nbsp; Book a Table</a>
+    </div>
+
     <!-- Main Custom js file -->
-    <script src="/js/function.js"></script>
+    <script src="../js/function.js"></script>
 </body>
 </html>
