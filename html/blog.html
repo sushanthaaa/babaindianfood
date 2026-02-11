@@ -1,506 +1,479 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zh-Hant-TW">
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Sushanthaaa">
-	<!-- Page Title -->
-    <title>Baba - Restaurant .</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- 必要 meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+  
+    <!-- SEO 主要設定 -->
+    <title>印度料理部落格 | 台中 巴巴印度料理館 – 探索印度美食文化</title>
+    <meta name="description"
+          content="探索巴巴印度料理部落格，了解印度美食文化、香料知識、素食指南以及在台中點餐的秘訣。">
+    <meta name="keywords"
+          content="台中印度餐廳部落格, 印度料理指南, 印度香料, 台中素食推薦, 巴巴印度料理館">
+    <meta name="author" content="巴巴印度料理館">
+  
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://babaindianfood.tw/blog.html">
+    <link rel="alternate" hreflang="zh-Hant-TW" href="https://babaindianfood.tw/blog.html">
+    <link rel="alternate" hreflang="en"      href="https://babaindianfood.tw/en/blog.html">
+  
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="印度料理部落格 | 台中 巴巴印度料理館">
+    <meta property="og:description" content="深入了解正宗印度料理的秘密。從香料知識到新手指南。">
+    <meta property="og:url"         content="https://babaindianfood.tw/blog.html">
+    <meta property="og:image"       content="https://babaindianfood.tw/images/hero-bg.jpg">
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  
+    <!-- 字體與樣式 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <link href="css/bootstrap.min.css"      rel="stylesheet">
+    <link href="css/slicknav.min.css"       rel="stylesheet">
+    <link href="css/swiper-bundle.min.css"  rel="stylesheet">
+    <link href="css/all.min.css"            rel="stylesheet">
+    <link href="css/animate.css"            rel="stylesheet">
+    <link href="css/magnific-popup.css"     rel="stylesheet">
+    <link href="css/mousecursor.css"        rel="stylesheet">
+    <link href="css/custom.css"             rel="stylesheet">
+
+    <style>
+        .blog-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('images/blog-hero.jpg') center center / cover no-repeat fixed;
+            overflow: hidden;
+        }
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(30, 10, 0, 0.55) 0%,
+                rgba(45, 15, 0, 0.70) 50%,
+                rgba(30, 10, 0, 0.85) 100%
+            );
+        }
+        .blog-hero .hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+        .blog-hero h1 {
+            font-family: var(--default-font);
+            font-size: 68px;
+            color: var(--secondary-color);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+        .blog-hero h1 span {
+            color: var(--accent-color);
+        }
+        .blog-hero p {
+            font-size: 22px;
+            color: rgba(255, 251, 242, 0.85);
+            font-style: italic;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        @media (max-width: 991px) {
+            .blog-hero h1 { font-size: 48px; }
+            .blog-hero p { font-size: 18px; }
+        }
+        @media (max-width: 575px) {
+            .blog-hero { min-height: 70vh; }
+            .blog-hero h1 { font-size: 36px; }
+            .blog-hero p { font-size: 16px; }
+        }
+        .blog-list-section {
+            padding: 100px 0;
+            background-color: var(--secondary-color);
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .blog-card-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        .blog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-card-img img {
+            transform: scale(1.1);
+        }
+        .blog-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .blog-card-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .blog-card-content h3 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .blog-card-content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .blog-readmore {
+            margin-top: auto;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: gap 0.3s ease;
+        }
+        .blog-readmore:hover {
+            gap: 15px;
+            color: var(--primary-color);
+        }
+    </style>
+
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body>
+<body class="secondary-page">
 
-    <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    <!-- Preloader -->
+    <div class="preloader">
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
 
-    <!-- Header Start -->
-	<header class="main-header">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="./">
-						<img src="images/logo.svg" alt="Logo">
-					</a>
-					<!-- Logo End -->
-
-					<!-- Main Menu Start -->
-					<div class="collapse navbar-collapse main-menu">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/baba-logo.png" alt="巴巴印度料理館 Logo" style="height: 60px; width: auto;">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="./">Home</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home - Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="menu.html">menu</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Services Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="chefs.html">Our Chefs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="chef-single.html">Chef Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">品牌故事</a></li>
+                                <li class="nav-item"><a class="nav-link" href="services.html">服務項目</a></li>
+                                <li class="nav-item"><a class="nav-link" href="menu.html">精選菜單</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">美食相簿</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="blog.html">部落格</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">立即訂位</a></li>
+                                <li class="nav-item submenu">
+                                    <a class="nav-link" href="#">語言</a>
+                                    <ul class="lang-switch">
+                                        <li class="nav-item"><a class="nav-link active" hreflang="zh-Hant-TW" href="blog.html">中文</a></li>
+                                        <li class="nav-item"><a class="nav-link" hreflang="en" href="en/blog.html">EN</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                           
                             </ul>
                         </div>
-                        <!-- Header Contact Box Start -->
-                        <div class="header-btn">
-                            <a href="contact.html" class="btn-default">book a table</a>
-                        </div>
-                        <!-- Header Contact Box End -->
-					</div>
-					<!-- Main Menu End -->
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
-	<!-- Header End -->
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>        
+          <div class="responsive-menu"></div>
+        </div>
+    </header>
 
-    <!-- Page Header Start -->
-	<div class="page-header parallaxie">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<!-- Page Header Box Start -->
-					<div class="page-header-box">
-						<h1 class="text-anime-style-2" data-cursor="-opaque">latest blog</h1>
-						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">latest blog</li>
-							</ol>
-						</nav>
-					</div>
-					<!-- Page Header Box End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Page Header End -->
+    <!-- Full Page Hero -->
+    <section class="blog-hero">
+        <div class="hero-inner">
+            <h1>印度美食<span>部落格</span></h1>
+            <p>從印度的心臟地帶到台中的餐桌，分享故事、食譜與文化</p>
+        </div>
+    </section>
 
-    <!-- Page Blog Section Start -->
-    <div class="page-blog">
+    <!-- Blog List Section -->
+    <section class="blog-list-section">
         <div class="container">
             <div class="row">
+                <!-- Blog Post 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="images/blog-beginner-thumb.jpg" alt="台中印度料理新手指南">
+                            <span class="blog-category">點餐指南</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">5 Tips for Perfecting Your Home Dining Experience</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-beginner-guide.html">台中印度料理新手指南：如何點餐與選擇辣度</a></h3>
+                            <p>第一次踏入印度餐廳感到不知所措嗎？這份指南將帶您認識經典菜色，並教您如何像專家一樣選擇適合自己的辣度。</p>
+                            <a href="blog-beginner-guide.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
 
+                <!-- Blog Post 2 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="images/blog-vegetarian-thumb.jpg" alt="印度蔬食文化">
+                            <span class="blog-category">素食文化</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Why Locally Sourced Ingredients Make a Difference</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-vegetarian.html">素食者的天堂：探索豐富多樣的印度蔬食文化</a></h3>
+                            <p>印度擁有世界上最多樣化的素食料理。讓我們帶您探索從香濃的 Paneer 到各種豆類咖哩的迷人蔬食世界。</p>
+                            <a href="blog-vegetarian.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
 
+                <!-- Blog Post 3 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-card-img">
+                            <img src="images/blog-tandoor-naan.jpg" alt="北印咖哩與坦都烤餅">
+                            <span class="blog-category">美食教育</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Creating Memorable Dining Moments with Friends</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-tandoor-curries.html">北印咖哩與坦都烤餅的藝術：探索道地的香料風味</a></h3>
+                            <p>了解北印度料理的靈魂。從炭火窯烤的烤餅到濃郁的瑪莎拉醬汁，揭開這些經典美味背後的烹飪秘密。</p>
+                            <a href="blog-tandoor-curries.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="images/blog-hand-eating.jpg" alt="印度家庭用餐情境">
+                            <span class="blog-category">文化探索</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-hand-eating.html">為什麼印度家庭用手吃飯？背後真正的文化意義</a></h3>
+                            <p>帶您了解印度用手進食的文化背景，以及食物、家庭與傳統之間的深層連結。</p>
+                            <a href="blog-hand-eating.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Blog Post 5 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-4.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="images/blog-north-south.jpg" alt="北印度與南印度料理對比">
+                            <span class="blog-category">飲食傳統</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Elevate Your Table Setting with Simple Touches</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-north-south.html">不是所有咖哩都很辣：認識北印度與南印度的飲食差異</a></h3>
+                            <p>探索地理與文化如何影響印度南北料理風味，以及兩者之間的不同特色。</p>
+                            <a href="blog-north-south.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
 
+                <!-- Blog Post 6 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-5.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-card-img">
+                            <img src="images/blog-veg-thali.jpg" alt="印度素食拼盤">
+                            <span class="blog-category">素食文化</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Secrets to Cooking Restaurant-Style Meals at Home</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-veg-india.html">印度素食文化：數百萬人如何無肉也能享受美味</a></h3>
+                            <p>了解印度豐富的素食傳統，如何在沒有肉類的情況下創造層次豐富的味道。</p>
+                            <a href="blog-veg-india.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
 
+                <!-- Blog Post 7 -->
                 <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="1s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-6.jpg" alt="">
-                                </figure>
-                            </a>
+                    <div class="blog-card wow fadeInUp">
+                        <div class="blog-card-img">
+                            <img src="images/blog-roti-meal.jpg" alt="印度家常料理">
+                            <span class="blog-category">文化比較</span>
                         </div>
-                        <div class="blog-item-body">
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Bringing Family Together Over Delicious Meals</a></h3>
-                            </div>
-                            <div class="blog-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-rice-roti.html">從米飯到烤餅：印度家庭料理與台灣家常菜有何不同</a></h3>
+                            <p>比較印度與台灣日常飲食的差異，從主食、調味到用餐習慣。</p>
+                            <a href="blog-rice-roti.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
 
-                <div class="col-lg-12">
-                    <!-- Page Pagination Start -->
-                    <div class="page-pagination wow fadeInUp" data-wow-delay="1.2s">
-                        <ul class="pagination">
-                            <li><a href="#"><i class="fa-solid fa-arrow-left-long"></i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></li>
-                        </ul>
+                <!-- Blog Post 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-card-img">
+                            <img src="images/blog-masala-spices.jpg" alt="印度香料盤">
+                            <span class="blog-category">香料指南</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3><a href="blog-masala.html">Masala 不是一種香料：印度人口中的 Masala 是什麼？</a></h3>
+                            <p>揭開 Masala 的真正含義，了解香料調配如何成為印度料理的靈魂。</p>
+                            <a href="blog-masala.html" class="blog-readmore">閱讀全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <!-- Page Pagination End -->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Our Blog Section End -->
+    </section>
 
-   <!-- =========  Reserve / Location Section  ========= -->
-<section class="reserve-table py-120">
-    <div class="container">
-      <div class="row g-lg-5 align-items-start">
-  
-        <!-- ▸ ①  Left column – generic CTA & hours -->
-        <div class="col-lg-4">
-          <div class="reserve-table-content">
-  
-            <!-- heading -->
-            <div class="section-title">
-              <h3 class="wow fadeInUp">reserve&nbsp;online</h3>
-              <h2 class="text-anime-style-2" data-cursor="-opaque">
-                Book instantly on&nbsp;<span>FunNow</span>
-              </h2>
-            </div>
-  
-            <!-- opening hours -->
-            <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.1s">
-              <h3>Opening&nbsp;Hours</h3>
-              <ul>
-                <li>Mon – Thu <span>10 : 00 AM – 09 : 00 PM</span></li>
-                <li>Fri – Sat <span>09 : 00 AM – 10 : 00 PM</span></li>
-                <li>Sun <span>Closed</span></li>
-              </ul>
-            </div>
-  
-            <!-- friendly reminder -->
-            <p class="small mb-0 wow fadeInUp" data-wow-delay="0.15s">
-              Select the branch tab on the right and tap <b>Reserve on FunNow</b>.
-            </p>
-  
-          </div><!-- /reserve‑table‑content -->
-        </div><!-- /col -->
-  
-        <!-- ▸ ②  Right column – tabs, maps, branch buttons -->
-        <div class="col-lg-8">
-          <div class="our-menu-tab">
-  
-            <!-- tab nav -->
-            <div class="our-menu-tab-nav">
-              <ul class="nav nav-tabs" id="branchTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active"
-                          id="branch1-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#branch1"
-                          type="button" role="tab"
-                          aria-selected="true">
-                    Branch&nbsp;①&nbsp;&mdash;&nbsp;Central&nbsp;District
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link"
-                          id="branch2-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#branch2"
-                          type="button" role="tab"
-                          aria-selected="false">
-                    Branch&nbsp;②&nbsp;&mdash;&nbsp;Wuri&nbsp;District
-                  </button>
-                </li>
-              </ul>
-            </div><!-- /tab nav -->
-  
-            <!-- tab panes -->
-            <div class="tab-content pt-4" id="branchTabContent">
-  
-              <!-- ▸ Central branch -->
-              <div class="tab-pane fade show active" id="branch1"
-                   role="tabpanel" aria-labelledby="branch1-tab">
-                <h4>BABA Indian Restaurant &bull; Central District</h4>
-                <p class="mb-2">
-                  189&nbsp;Minzu&nbsp;Rd., Central&nbsp;Dist., Taichung 市 <br>
-                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;2221-7258
-                </p>
-  
-                <!-- map -->
-                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8587355407954!2d120.6743342755302!3d24.14159867364537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dc6106c647b%3A0xd3bb3e4dfb6da3d9!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo!5e0!3m2!1szh-TW!2stw!4v1746370683648!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-  
-                <!-- branch‑specific FunNow button -->
-                <a href="https://www.myfunnow.com/funbook/3054477568617/branch" target="_blank"
-                   class="btn-default wow fadeInUp">
-                  Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-                </a>
-              </div><!-- /pane Central -->
-  
-              <!-- ▸ Wuri branch -->
-              <div class="tab-pane fade" id="branch2"
-                   role="tabpanel" aria-labelledby="branch2-tab">
-                <h4>BABA Indian Restaurant &bull; Wuri District</h4>
-                <p class="mb-2">
-                  212&nbsp;Zhongshan&nbsp;Rd., Wuri&nbsp;Dist., Taichung 市 <br>
-                  <i class="fa-solid fa-phone"></i>&nbsp; (04)&nbsp;987-6543
-                </p>
-  
-                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.7812632852924!2d120.63942317552943!3d24.109186574907458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d005d83c7a9%3A0x97ec09518a778e37!2z5be05be06YGU54i45Y2w5bqm5paZ55CG6aSo77yI54OP5pel5bqX77yJIEJBQkEgSU5ESUFOIENVSVNJTkUoV3UtUmkp!5e0!3m2!1szh-TW!2stw!4v1746370864951!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-  
-                <a href="https://www.myfunnow.com/funbook/3383391234272/branch" target="_blank"
-                   class="btn-default wow fadeInUp">
-                  Reserve on FunNow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-                </a>
-              </div><!-- /pane Wuri -->
-  
-            </div><!-- /tab‑content -->
-          </div><!-- /our‑menu‑tab -->
-        </div><!-- /col‑lg‑8 -->
-  
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </section>
-  <!-- ========= /Reserve / Location Section ========= -->
-    
-    <!-- Main Footer Section Start -->
+    <!-- Main Footer -->
     <footer class="main-footer">
         <div class="container">
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="巴巴印度料理館" style="height: 60px;">
+                </a>
+                <ul class="wrapper">
+                  <li class="icon facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100075753506880', '_blank')">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon instagram" onclick="window.open('https://www.instagram.com/babaindianrestaurant/', '_blank')">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </li>
+                  <li class="icon tripadvisor" onclick="window.open('https://www.tripadvisor.com/Search?q=Baba+Indian+Restaurant+Taichung', '_blank')">
+                    <span class="tooltip">TripAdvisor</span>
+                    <svg viewBox="0 0 24 24" height="1.8em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 21.429c-5.208 0-9.429-4.221-9.429-9.429S6.792 2.571 12 2.571 21.429 6.792 21.429 12 17.208 21.429 12 21.429zM15.429 9.857a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zm-6.858 0a2.143 2.143 0 1 1 0-4.286 2.143 2.143 0 0 1 0 4.286zM12 16.286c-2.433 0-4.509-1.282-5.654-3.193.15-.052.298-.109.444-.171.956 1.638 2.712 2.731 4.73 2.731s3.774-1.093 4.73-2.731c.146.062.294.119.444.171-1.145 1.911-3.221 3.193-5.654 3.193z"/>
+                    </svg>
+                  </li>
+                </ul>
+            </div>
+
             <div class="row">
-                <div class="col-lg-6">
-                    <!-- Footer Content Start -->
-                    <div class="footer-content">
-                        <!-- Footer Logo Start -->
-                        <div class="footer-logo">
-                            <img src="images/logo.svg" alt="">
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-indian-card wow fadeInUp">
+                        <h3 class="footer-branch-title">中區店 <span>分店 1</span></h3>
+                        <div class="footer-contact-info">
+                            <p><i class="fa-solid fa-location-dot"></i> 台中市中區民族路 189 號</p>
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:+886422290775">04 2229 0775</a></p>
                         </div>
-                        <!-- Footer Logo End -->
-
-                        <!-- Footer Contact Box Start -->
-                        <div class="footer-contact-box">
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images/icon-location.svg" alt="">
-                                </div>
-                                <div class="footer-contact-content">
-                                    <p>No. 189號, Minzu Rd, Central District, Taichung City, 400</p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <div class="icon-box">
-                                    <img src="images/icon-phone.svg" alt="">
-                                </div>
-                                <div class="footer-contact-content">
-                                    <p><a href="tel:+886 423 376 667 ">+886 423 376 667 </a></p>
-                                </div>
-                            </div>
-                            <!-- Footer Contact Item End -->
-                        </div>
-                        <!-- Footer Contact Box End -->
                     </div>
-                    <!-- Footer Content End -->
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-indian-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="footer-branch-title">烏日店 <span>分店 2</span></h3>
+                        <div class="footer-contact-info">
+                            <p><i class="fa-solid fa-location-dot"></i> 台中市烏日區中山路一段 212 號</p>
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:+886423376667">04 2337 6667</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Footer Copyright Section Start -->
-            <div class="footer-copyright">
+            <div class="footer-copyright mt-5 pt-4" style="border-top: 1px solid rgba(124, 45, 18, 0.1);">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <!-- Footer Social Icon Start -->
-                        <div class="footer-social-icon">
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Social Icon End -->
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <!-- Footer Copyright Start -->
+                    <div class="col-md-12 text-center">
                         <div class="footer-copyright-text">
-                            <p>Copyright © 2025 All Rights Reserved.</p>
+                            <p style="color: rgba(69, 26, 3, 0.5); font-size: 14px;">© 2026 巴巴印度料理館。保留所有權利。</p>
                         </div>
-                        <!-- Footer Copyright End -->
                     </div>
                 </div>
             </div>
-            <!-- Footer Copyright Section End -->
         </div>
     </footer>
-    <!-- Main Footer Section End -->
 
-    <!-- Jquery Library File -->
+    <!-- Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
     <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-    <!-- Magnific js file -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
     <script src="js/SmoothScroll.js"></script>
-    <!-- Parallax js -->
     <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
     <script src="js/gsap.min.js"></script>
     <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
-    <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+  <!-- LINE Floating Badge -->
+  <a href="https://lin.ee/RZef6uz" target="_blank" rel="noopener noreferrer" class="line-floating-badge" aria-label="Chat on LINE">
+    <i class="fa-brands fa-line"></i>
+    <span>LINE 聯繫</span>
+  </a>
+
+  <!-- Mobile Book Bar -->
+  <div class="mobile-book-bar">
+    <a href="contact.html" class="mobile-book-btn">
+      <i class="fas fa-calendar-check"></i>
+      立即訂位
+    </a>
+  </div>
 </body>
 </html>
