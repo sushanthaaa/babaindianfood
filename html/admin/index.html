@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baba Admin - Reservations</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/custom.css" rel="stylesheet">
+<style>
+body{background:#FFFBF2;color:#451A03}
+.admin-wrap{max-width:1100px;margin:120px auto 60px}
+.admin-card{background:#fff;border:1px solid rgba(124,45,18,.15);border-radius:18px;padding:24px;box-shadow:0 12px 30px rgba(69,26,3,.08)}
+.table-wrap{max-height:460px;overflow:auto}
+</style>
+</head>
+<body>
+<div class="admin-wrap container">
+  <h1 style="font-family:var(--default-font);font-size:52px;">Reservation Admin</h1>
+  <p>Manage direct bookings, status updates, and closure dates.</p>
+  <div class="admin-card mb-4" id="loginCard">
+    <h3>Admin Login</h3>
+    <div class="row g-3">
+      <div class="col-md-4"><input id="adminEmail" class="form-control" placeholder="Admin email"></div>
+      <div class="col-md-4"><input id="adminPassword" type="password" class="form-control" placeholder="Password"></div>
+      <div class="col-md-4"><button class="btn-default" id="adminLoginBtn">Login</button></div>
+    </div>
+    <p id="loginMsg" class="mt-2"></p>
+  </div>
+
+  <div id="adminPanel" style="display:none;">
+    <div class="admin-card mb-4">
+      <div class="d-flex justify-content-between align-items-center"><h3>Closure Control</h3><button class="btn-default" id="logoutBtn">Logout</button></div>
+      <div class="row g-2">
+        <div class="col-md-3"><select id="closureBranch" class="form-control"><option value="central">Central</option><option value="wuri">Wuri</option></select></div>
+        <div class="col-md-3"><input id="closureDate" type="date" class="form-control"></div>
+        <div class="col-md-4"><input id="closureReason" class="form-control" placeholder="Reason"></div>
+        <div class="col-md-2"><button class="btn-default" id="addClosureBtn">Save</button></div>
+      </div>
+      <ul id="closureList" class="mt-3"></ul>
+    </div>
+
+    <div class="admin-card">
+      <h3>Reservations</h3>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Code</th><th>Branch</th><th>Date</th><th>Time</th><th>Guests</th><th>Name</th><th>Phone</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody id="reservationRows"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/admin-reservations.js"></script>
+</body>
+</html>

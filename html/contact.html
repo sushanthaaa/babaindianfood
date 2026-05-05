@@ -361,7 +361,37 @@
     </section>
 
     <!-- Main Footer Section Start -->
-    <footer class="main-footer">
+    
+<section class="reserve-table py-120" id="direct-reservation">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="reserve-table-content" style="background:#fff;border:1px solid rgba(124,45,18,.15);border-radius:20px;padding:32px;">
+          <div class="section-title">
+            <h3 class="wow fadeInUp">• DIRECT RESERVATION</h3>
+            <h2 class="text-anime-style-2">Book Directly with <span>Baba</span></h2>
+          </div>
+          <form id="directReservationForm">
+            <div class="row g-3">
+              <div class="col-md-4"><label>Branch</label><select id="resBranch" class="form-control" required><option value="">Select</option><option value="central">Central District</option><option value="wuri">Wuri District</option></select></div>
+              <div class="col-md-4"><label>Date</label><input id="resDate" type="date" class="form-control" required></div>
+              <div class="col-md-4"><label>Time</label><select id="resTime" class="form-control" required><option value="">Select branch and date first</option></select></div>
+              <div class="col-md-3"><label>Guests</label><input id="resPartySize" type="number" min="1" max="20" class="form-control" required></div>
+              <div class="col-md-3"><label>Name</label><input id="resName" class="form-control" required></div>
+              <div class="col-md-3"><label>Email</label><input id="resEmail" type="email" class="form-control" required></div>
+              <div class="col-md-3"><label>Phone</label><input id="resPhone" class="form-control" required></div>
+              <div class="col-12"><label>Notes</label><textarea id="resNotes" class="form-control" rows="3"></textarea></div>
+              <div class="col-12"><button id="reservationSubmitBtn" type="submit" class="btn-default">Submit Reservation</button></div>
+              <div class="col-12"><p id="reservationMsg" style="margin:0;font-weight:600;"></p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
         <div class="container">
             <!-- Footer Header -->
             <div class="footer-logo-box">
@@ -488,5 +518,6 @@
       立即訂位
     </a>
   </div>
+<script src="js/reservations.js"></script>
 </body>
 </html>
