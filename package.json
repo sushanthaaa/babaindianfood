@@ -12,7 +12,8 @@
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "orchids-visual-edits": "latest"
+    "orchids-visual-edits": "latest",
+    "pg": "^8.13.1"
   },
   "devDependencies": {
     "@types/node": "^20",
